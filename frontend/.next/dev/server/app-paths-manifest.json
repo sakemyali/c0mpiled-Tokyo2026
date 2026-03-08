@@ -1,3 +1,10 @@
 {
-  "/page": "app/page.js"
+  "/api/groups/[id]/route": "app/api/groups/[id]/route.js",
+  "/api/groups/route": "app/api/groups/route.js",
+  "/api/analytics/route": "app/api/analytics/route.js",
+  "/page": "app/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/submit/page": "app/dashboard/submit/page.js",
+  "/dashboard/analytics/page": "app/dashboard/analytics/page.js",
+  "/dashboard/reports/[reportId]/page": "app/dashboard/reports/[reportId]/page.js"
 }
