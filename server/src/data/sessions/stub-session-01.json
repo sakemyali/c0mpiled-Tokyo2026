@@ -1,0 +1,81 @@
+[
+  {
+    "type": 4,
+    "data": {
+      "href": "https://app.example.com/dashboard",
+      "width": 1920,
+      "height": 1080
+    },
+    "timestamp": 1709800000000
+  },
+  {
+    "type": 2,
+    "data": {
+      "node": {
+        "type": 0,
+        "childNodes": [
+          {
+            "type": 1,
+            "name": "html",
+            "publicId": "",
+            "systemId": ""
+          },
+          {
+            "type": 2,
+            "tagName": "html",
+            "attributes": { "lang": "en" },
+            "childNodes": [
+              {
+                "type": 2,
+                "tagName": "head",
+                "attributes": {},
+                "childNodes": [
+                  {
+                    "type": 2,
+                    "tagName": "title",
+                    "attributes": {},
+                    "childNodes": [
+                      { "type": 3, "textContent": "App Dashboard" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": 2,
+                "tagName": "body",
+                "attributes": { "class": "app-body" },
+                "childNodes": [
+                  {
+                    "type": 2,
+                    "tagName": "div",
+                    "attributes": { "id": "root", "class": "app-container" },
+                    "childNodes": [
+                      {
+                        "type": 2,
+                        "tagName": "h1",
+                        "attributes": {},
+                        "childNodes": [
+                          { "type": 3, "textContent": "Dashboard" }
+                        ]
+                      },
+                      {
+                        "type": 2,
+                        "tagName": "p",
+                        "attributes": {},
+                        "childNodes": [
+                          { "type": 3, "textContent": "User navigated to checkout flow and encountered an error." }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "initialOffset": { "top": 0, "left": 0 }
+    },
+    "timestamp": 1709800001000
+  }
+]

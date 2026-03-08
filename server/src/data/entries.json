@@ -1,0 +1,2355 @@
+[
+  {
+    "id": "entry-001",
+    "text": "it broke again",
+    "source": "survey",
+    "submittedAt": "2026-03-01T04:17:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-002",
+    "text": "same issue as before with the checkout",
+    "source": "app-store",
+    "submittedAt": "2026-02-19T00:34:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-003",
+    "text": "I can't complete my purchase on mobile",
+    "source": "slack",
+    "submittedAt": "2026-02-08T20:51:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-004",
+    "text": "App crashed during checkout on Safari",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-28T16:08:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "neutral",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-005",
+    "text": "the thing with the payment is weird",
+    "source": "intercom",
+    "submittedAt": "2026-02-19T12:25:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "positive",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-006",
+    "text": "Mobile checkout is completely broken for me",
+    "source": "survey",
+    "submittedAt": "2026-02-09T08:42:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-007",
+    "text": "Lost my cart after checkout crash. Had to start over.",
+    "source": "app-store",
+    "submittedAt": "2026-03-01T04:59:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-008",
+    "text": "Crashes when tapping Confirm Payment. Happens 100% of the time on mobile Safari.",
+    "source": "slack",
+    "submittedAt": "2026-02-19T00:16:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "screenshotUrl": "/screenshots/placeholder-16.svg"
+  },
+  {
+    "id": "entry-009",
+    "text": "Can't buy anything on my phone anymore",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-08T20:33:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "neutral",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-010",
+    "text": "Tried to place an order on my iPad and the screen went white after payment details",
+    "source": "intercom",
+    "submittedAt": "2026-02-28T16:50:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "positive",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-011",
+    "text": "Keeps crashing on the payment screen. Samsung Galaxy S24.",
+    "source": "survey",
+    "submittedAt": "2026-02-19T12:07:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-012",
+    "text": "My wife couldn't order from her phone either. Definitely a mobile issue.",
+    "source": "app-store",
+    "submittedAt": "2026-02-09T08:24:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-013",
+    "text": "The checkout thing is broken on phones again",
+    "source": "slack",
+    "submittedAt": "2026-03-01T04:41:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-014",
+    "text": "crash on checkout",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-19T00:58:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "neutral",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-015",
+    "text": "I submitted a ticket about this last month. Still not fixed.",
+    "source": "intercom",
+    "submittedAt": "2026-02-08T20:15:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "positive",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-016",
+    "text": "This is really frustrating. I need to buy something but can't on my phone.",
+    "source": "survey",
+    "submittedAt": "2026-02-28T16:32:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-017",
+    "text": "why does checkout keep crashing on mobile???",
+    "source": "app-store",
+    "submittedAt": "2026-02-19T12:49:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-018",
+    "text": "Tried three different mobile browsers. Checkout crashes on all of them.",
+    "source": "slack",
+    "submittedAt": "2026-02-09T08:06:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "screenshotUrl": "/screenshots/placeholder-16.svg"
+  },
+  {
+    "id": "entry-019",
+    "text": "it broke again",
+    "source": "support-ticket",
+    "submittedAt": "2026-03-01T04:23:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "neutral",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-020",
+    "text": "same issue as before with the checkout",
+    "source": "intercom",
+    "submittedAt": "2026-02-19T00:40:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "positive",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-021",
+    "text": "I can't complete my purchase on mobile",
+    "source": "survey",
+    "submittedAt": "2026-02-08T20:57:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-022",
+    "text": "App crashed during checkout on Safari",
+    "source": "app-store",
+    "submittedAt": "2026-02-28T16:14:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-023",
+    "text": "the thing with the payment is weird",
+    "source": "slack",
+    "submittedAt": "2026-02-19T12:31:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-024",
+    "text": "Mobile checkout is completely broken for me",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-09T08:48:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "neutral",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-025",
+    "text": "Lost my cart after checkout crash. Had to start over.",
+    "source": "intercom",
+    "submittedAt": "2026-03-01T04:05:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "positive",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-026",
+    "text": "Crashes when tapping Confirm Payment. Happens 100% of the time on mobile Safari.",
+    "source": "survey",
+    "submittedAt": "2026-02-19T00:22:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-027",
+    "text": "Can't buy anything on my phone anymore",
+    "source": "app-store",
+    "submittedAt": "2026-02-08T20:39:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-028",
+    "text": "Tried to place an order on my iPad and the screen went white after payment details",
+    "source": "slack",
+    "submittedAt": "2026-02-28T16:56:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "screenshotUrl": "/screenshots/placeholder-16.svg"
+  },
+  {
+    "id": "entry-029",
+    "text": "Keeps crashing on the payment screen. Samsung Galaxy S24.",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-19T12:13:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "neutral",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-030",
+    "text": "My wife couldn't order from her phone either. Definitely a mobile issue.",
+    "source": "intercom",
+    "submittedAt": "2026-02-09T08:30:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "positive",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-031",
+    "text": "The checkout thing is broken on phones again",
+    "source": "survey",
+    "submittedAt": "2026-03-01T04:47:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-032",
+    "text": "crash on checkout",
+    "source": "app-store",
+    "submittedAt": "2026-02-19T00:04:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-033",
+    "text": "I submitted a ticket about this last month. Still not fixed.",
+    "source": "slack",
+    "submittedAt": "2026-02-08T20:21:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "negative",
+    "groupId": "grp-001",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-034",
+    "text": "This is really frustrating. I need to buy something but can't on my phone.",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-28T16:38:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "neutral",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-035",
+    "text": "why does checkout keep crashing on mobile???",
+    "source": "intercom",
+    "submittedAt": "2026-02-19T12:55:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "positive",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-036",
+    "text": "Tried three different mobile browsers. Checkout crashes on all of them.",
+    "source": "survey",
+    "submittedAt": "2026-02-09T08:12:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "negative",
+    "groupId": "grp-001"
+  },
+  {
+    "id": "entry-037",
+    "text": "The search ranking is way off. Irrelevant items appear before exact matches.",
+    "source": "intercom",
+    "submittedAt": "2026-02-16T16:29:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "neutral",
+    "groupId": "grp-002",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-038",
+    "text": "Search worked better 6 months ago. What changed?",
+    "source": "survey",
+    "submittedAt": "2026-02-07T12:46:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "positive",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-039",
+    "text": "I gave up searching and just browsed categories instead",
+    "source": "app-store",
+    "submittedAt": "2026-02-27T08:03:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-040",
+    "text": "Results don't match my query at all",
+    "source": "slack",
+    "submittedAt": "2026-02-17T04:20:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-041",
+    "text": "Every time I search I get results from wrong categories",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-07T00:37:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-042",
+    "text": "Can you add filters to search? The results alone are not helpful.",
+    "source": "intercom",
+    "submittedAt": "2026-02-26T20:54:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "neutral",
+    "groupId": "grp-002",
+    "screenshotUrl": "/screenshots/placeholder-08.svg"
+  },
+  {
+    "id": "entry-043",
+    "text": "Zero results for common product names. Search needs serious work.",
+    "source": "survey",
+    "submittedAt": "2026-02-16T16:11:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "positive",
+    "groupId": "grp-002",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-044",
+    "text": "search is slow and inaccurate",
+    "source": "app-store",
+    "submittedAt": "2026-02-07T12:28:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-045",
+    "text": "Asked customer support to find a product because search couldn't",
+    "source": "slack",
+    "submittedAt": "2026-02-27T08:45:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-046",
+    "text": "Search results page loads but shows unrelated items every time",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-17T04:02:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-047",
+    "text": "I searched for 'wireless headphones' and got cables",
+    "source": "intercom",
+    "submittedAt": "2026-02-07T00:19:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "neutral",
+    "groupId": "grp-002",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-048",
+    "text": "Can't find what I'm looking for using search",
+    "source": "survey",
+    "submittedAt": "2026-02-26T20:36:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "positive",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-049",
+    "text": "I typed exactly what I wanted and it showed me completely different products",
+    "source": "app-store",
+    "submittedAt": "2026-02-16T16:53:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-050",
+    "text": "Misspelled a word slightly and got zero results. Google handles this fine, why can't you?",
+    "source": "slack",
+    "submittedAt": "2026-02-07T12:10:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-051",
+    "text": "The search ranking is way off. Irrelevant items appear before exact matches.",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-27T08:27:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-052",
+    "text": "Search worked better 6 months ago. What changed?",
+    "source": "intercom",
+    "submittedAt": "2026-02-17T04:44:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "neutral",
+    "groupId": "grp-002",
+    "screenshotUrl": "/screenshots/placeholder-08.svg"
+  },
+  {
+    "id": "entry-053",
+    "text": "I gave up searching and just browsed categories instead",
+    "source": "survey",
+    "submittedAt": "2026-02-07T00:01:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "positive",
+    "groupId": "grp-002",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-054",
+    "text": "Results don't match my query at all",
+    "source": "app-store",
+    "submittedAt": "2026-02-26T20:18:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-055",
+    "text": "Every time I search I get results from wrong categories",
+    "source": "slack",
+    "submittedAt": "2026-02-16T16:35:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-056",
+    "text": "Can you add filters to search? The results alone are not helpful.",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-07T12:52:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-057",
+    "text": "Zero results for common product names. Search needs serious work.",
+    "source": "intercom",
+    "submittedAt": "2026-02-27T08:09:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "neutral",
+    "groupId": "grp-002",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-058",
+    "text": "search is slow and inaccurate",
+    "source": "survey",
+    "submittedAt": "2026-02-17T04:26:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "positive",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-059",
+    "text": "Asked customer support to find a product because search couldn't",
+    "source": "app-store",
+    "submittedAt": "2026-02-07T00:43:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-060",
+    "text": "Search results page loads but shows unrelated items every time",
+    "source": "slack",
+    "submittedAt": "2026-02-26T20:00:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-061",
+    "text": "I searched for 'wireless headphones' and got cables",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-16T16:17:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-062",
+    "text": "Can't find what I'm looking for using search",
+    "source": "intercom",
+    "submittedAt": "2026-02-07T12:34:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "neutral",
+    "groupId": "grp-002",
+    "screenshotUrl": "/screenshots/placeholder-08.svg"
+  },
+  {
+    "id": "entry-063",
+    "text": "I typed exactly what I wanted and it showed me completely different products",
+    "source": "survey",
+    "submittedAt": "2026-02-27T08:51:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "positive",
+    "groupId": "grp-002",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-064",
+    "text": "Misspelled a word slightly and got zero results. Google handles this fine, why can't you?",
+    "source": "app-store",
+    "submittedAt": "2026-02-17T04:08:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-002"
+  },
+  {
+    "id": "entry-065",
+    "text": "Missed the notification setup during onboarding. Where do I find it now?",
+    "source": "app-store",
+    "submittedAt": "2026-03-02T20:25:00.000Z",
+    "userName": "Dana C.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-066",
+    "text": "My new team member couldn't complete onboarding either",
+    "source": "slack",
+    "submittedAt": "2026-02-20T16:42:00.000Z",
+    "userName": "Alex M.",
+    "sentiment": "neutral",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-067",
+    "text": "Is there a way to redo the tutorial? It skipped important parts.",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-11T12:59:00.000Z",
+    "userName": "Morgan W.",
+    "sentiment": "positive",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-068",
+    "text": "The animated transitions skip content if you click too quickly",
+    "source": "intercom",
+    "submittedAt": "2026-03-03T08:16:00.000Z",
+    "userName": "Jamie F.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-069",
+    "text": "Steps 3 and 4 of onboarding just... didn't happen for me",
+    "source": "survey",
+    "submittedAt": "2026-02-21T04:33:00.000Z",
+    "userName": "Parker D.",
+    "sentiment": "negative",
+    "groupId": "grp-003",
+    "screenshotUrl": "/screenshots/placeholder-14.svg"
+  },
+  {
+    "id": "entry-070",
+    "text": "Would be nice if there was a checklist showing what onboarding covered",
+    "source": "app-store",
+    "submittedAt": "2026-02-11T00:50:00.000Z",
+    "userName": "Skyler M.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-071",
+    "text": "New employee couldn't set up workspace properly because tutorial skipped that section",
+    "source": "slack",
+    "submittedAt": "2026-03-02T20:07:00.000Z",
+    "userName": "Charlie S.",
+    "sentiment": "neutral",
+    "groupId": "grp-003",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-072",
+    "text": "Onboarding skipped the workspace setup for our entire team during rollout",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-20T16:24:00.000Z",
+    "userName": "Pat G.",
+    "sentiment": "positive",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-073",
+    "text": "The onboarding skipped the setup part",
+    "source": "intercom",
+    "submittedAt": "2026-02-11T12:41:00.000Z",
+    "userName": "Dana C.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-074",
+    "text": "onboarding went by too fast",
+    "source": "survey",
+    "submittedAt": "2026-03-03T08:58:00.000Z",
+    "userName": "Alex M.",
+    "sentiment": "negative",
+    "groupId": "grp-003",
+    "screenshotUrl": "/screenshots/placeholder-04.svg"
+  },
+  {
+    "id": "entry-075",
+    "text": "I never got to set up my workspace during onboarding",
+    "source": "app-store",
+    "submittedAt": "2026-02-21T04:15:00.000Z",
+    "userName": "Morgan W.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-076",
+    "text": "Clicked next too fast and it skipped everything",
+    "source": "slack",
+    "submittedAt": "2026-02-11T00:32:00.000Z",
+    "userName": "Jamie F.",
+    "sentiment": "neutral",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-077",
+    "text": "Onboarding is buggy -- it skipped steps 3 and 4 for me",
+    "source": "support-ticket",
+    "submittedAt": "2026-03-02T20:49:00.000Z",
+    "userName": "Parker D.",
+    "sentiment": "positive",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-078",
+    "text": "The onboarding speed is too fast and you can't go back",
+    "source": "intercom",
+    "submittedAt": "2026-02-20T16:06:00.000Z",
+    "userName": "Skyler M.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-079",
+    "text": "Tutorial skips on slow internet",
+    "source": "survey",
+    "submittedAt": "2026-02-11T12:23:00.000Z",
+    "userName": "Charlie S.",
+    "sentiment": "negative",
+    "groupId": "grp-003",
+    "screenshotUrl": "/screenshots/placeholder-14.svg"
+  },
+  {
+    "id": "entry-080",
+    "text": "Onboarding didn't cover half the features",
+    "source": "app-store",
+    "submittedAt": "2026-03-03T08:40:00.000Z",
+    "userName": "Pat G.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-081",
+    "text": "same onboarding problem as others reported",
+    "source": "slack",
+    "submittedAt": "2026-02-21T04:57:00.000Z",
+    "userName": "Dana C.",
+    "sentiment": "neutral",
+    "groupId": "grp-003",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-082",
+    "text": "First day using the app and already confused because tutorial skipped setup steps",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-11T00:14:00.000Z",
+    "userName": "Alex M.",
+    "sentiment": "positive",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-083",
+    "text": "Started onboarding on spotty wifi and it jumped ahead",
+    "source": "intercom",
+    "submittedAt": "2026-03-02T20:31:00.000Z",
+    "userName": "Morgan W.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-084",
+    "text": "onboarding broken",
+    "source": "survey",
+    "submittedAt": "2026-02-20T16:48:00.000Z",
+    "userName": "Jamie F.",
+    "sentiment": "negative",
+    "groupId": "grp-003",
+    "screenshotUrl": "/screenshots/placeholder-04.svg"
+  },
+  {
+    "id": "entry-085",
+    "text": "The tutorial progress bar showed 100% but I definitely didn't see all steps",
+    "source": "app-store",
+    "submittedAt": "2026-02-11T12:05:00.000Z",
+    "userName": "Parker D.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-086",
+    "text": "Had to watch a YouTube video to figure out features the onboarding was supposed to teach",
+    "source": "slack",
+    "submittedAt": "2026-03-03T08:22:00.000Z",
+    "userName": "Skyler M.",
+    "sentiment": "neutral",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-087",
+    "text": "I missed some tutorial steps and now I'm lost",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-21T04:39:00.000Z",
+    "userName": "Charlie S.",
+    "sentiment": "positive",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-088",
+    "text": "Tutorial jumped from step 2 to the dashboard",
+    "source": "intercom",
+    "submittedAt": "2026-02-11T00:56:00.000Z",
+    "userName": "Pat G.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-089",
+    "text": "The getting started guide skipped over important features",
+    "source": "survey",
+    "submittedAt": "2026-03-02T20:13:00.000Z",
+    "userName": "Dana C.",
+    "sentiment": "negative",
+    "groupId": "grp-003",
+    "screenshotUrl": "/screenshots/placeholder-14.svg"
+  },
+  {
+    "id": "entry-090",
+    "text": "New to the app and the tutorial didn't show me how to set up notifications",
+    "source": "app-store",
+    "submittedAt": "2026-02-20T16:30:00.000Z",
+    "userName": "Alex M.",
+    "sentiment": "negative",
+    "groupId": "grp-003"
+  },
+  {
+    "id": "entry-091",
+    "text": "I had to ask my colleague how to set up workspace because tutorial didn't cover it",
+    "source": "slack",
+    "submittedAt": "2026-02-11T12:47:00.000Z",
+    "userName": "Morgan W.",
+    "sentiment": "neutral",
+    "groupId": "grp-003",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-092",
+    "text": "Why is the dashboard so slow? Other similar tools load instantly.",
+    "source": "intercom",
+    "submittedAt": "2026-02-22T11:04:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-093",
+    "text": "Blank screen for 10-15 seconds before dashboard appears",
+    "source": "survey",
+    "submittedAt": "2026-02-12T07:21:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-15.svg"
+  },
+  {
+    "id": "entry-094",
+    "text": "The loading time is unacceptable for a daily-use tool",
+    "source": "app-store",
+    "submittedAt": "2026-03-04T03:38:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "neutral",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-095",
+    "text": "I can see API calls stacking up in network tab. Way too many requests on load.",
+    "source": "slack",
+    "submittedAt": "2026-02-21T23:55:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "positive",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-096",
+    "text": "Every morning I open the app and wait... and wait... and wait for the dashboard",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-11T19:12:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-01.svg"
+  },
+  {
+    "id": "entry-097",
+    "text": "Other team members are also complaining about dashboard load times",
+    "source": "intercom",
+    "submittedAt": "2026-03-03T15:29:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "negative",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-098",
+    "text": "Seriously considering switching tools because of how slow the dashboard is",
+    "source": "survey",
+    "submittedAt": "2026-02-22T11:46:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-05.svg"
+  },
+  {
+    "id": "entry-099",
+    "text": "Loading spinner shows for 12 seconds before I can interact with anything",
+    "source": "app-store",
+    "submittedAt": "2026-02-12T07:03:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "neutral",
+    "groupId": "grp-004",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-100",
+    "text": "Even on our office fiber internet, the dashboard is slow",
+    "source": "slack",
+    "submittedAt": "2026-03-04T03:20:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "positive",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-101",
+    "text": "Too many API calls. The waterfall in DevTools looks ridiculous.",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-21T23:37:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-11.svg"
+  },
+  {
+    "id": "entry-102",
+    "text": "My manager asked why I'm 'idle' so much -- it's because I'm waiting for the dashboard",
+    "source": "intercom",
+    "submittedAt": "2026-02-11T19:54:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-103",
+    "text": "Please optimize the dashboard load time. It's the most used page.",
+    "source": "survey",
+    "submittedAt": "2026-03-03T15:11:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-15.svg"
+  },
+  {
+    "id": "entry-104",
+    "text": "Dashboard takes forever to load",
+    "source": "app-store",
+    "submittedAt": "2026-02-22T11:28:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "neutral",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-105",
+    "text": "I wait 10+ seconds every time I open the dashboard",
+    "source": "slack",
+    "submittedAt": "2026-02-12T07:45:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "positive",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-106",
+    "text": "The main page just shows a spinner for ages",
+    "source": "support-ticket",
+    "submittedAt": "2026-03-04T03:02:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-01.svg"
+  },
+  {
+    "id": "entry-107",
+    "text": "I've started making coffee while waiting for the dashboard to load. That's how slow it is.",
+    "source": "intercom",
+    "submittedAt": "2026-02-21T23:19:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "negative",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-108",
+    "text": "Dashboard load time has gotten worse over the past month",
+    "source": "survey",
+    "submittedAt": "2026-02-11T19:36:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-05.svg"
+  },
+  {
+    "id": "entry-109",
+    "text": "Performance is terrible on the main dashboard",
+    "source": "app-store",
+    "submittedAt": "2026-03-03T15:53:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "neutral",
+    "groupId": "grp-004",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-110",
+    "text": "dashboard slow",
+    "source": "slack",
+    "submittedAt": "2026-02-22T11:10:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "positive",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-111",
+    "text": "The dashboard loaded faster in the beta version. What happened?",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-12T07:27:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-11.svg"
+  },
+  {
+    "id": "entry-112",
+    "text": "It takes longer to load the dashboard than to do the actual work",
+    "source": "intercom",
+    "submittedAt": "2026-03-04T03:44:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-113",
+    "text": "Dashboard shows blank page then suddenly everything appears at once",
+    "source": "survey",
+    "submittedAt": "2026-02-21T23:01:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-15.svg"
+  },
+  {
+    "id": "entry-114",
+    "text": "The charts on the dashboard take especially long to render",
+    "source": "app-store",
+    "submittedAt": "2026-02-11T19:18:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "neutral",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-115",
+    "text": "I time my dashboard loads out of frustration -- average 11 seconds this week",
+    "source": "slack",
+    "submittedAt": "2026-03-03T15:35:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "positive",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-116",
+    "text": "Why can't you load the important stuff first and defer the rest?",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-22T11:52:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-01.svg"
+  },
+  {
+    "id": "entry-117",
+    "text": "slow",
+    "source": "intercom",
+    "submittedAt": "2026-02-12T07:09:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-118",
+    "text": "Dashboard performance on Chrome is worse than Firefox, but both are slow",
+    "source": "survey",
+    "submittedAt": "2026-03-04T03:26:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-004",
+    "screenshotUrl": "/screenshots/placeholder-05.svg"
+  },
+  {
+    "id": "entry-119",
+    "text": "it's so slow",
+    "source": "app-store",
+    "submittedAt": "2026-02-21T23:43:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "neutral",
+    "groupId": "grp-004",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-120",
+    "text": "Dashboard loading is painfully slow",
+    "source": "slack",
+    "submittedAt": "2026-02-11T19:00:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "positive",
+    "groupId": "grp-004"
+  },
+  {
+    "id": "entry-121",
+    "text": "Worried about security since I can't remove my payment information",
+    "source": "survey",
+    "submittedAt": "2026-03-01T04:17:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-122",
+    "text": "The remove payment method feature hasn't worked for me in months",
+    "source": "app-store",
+    "submittedAt": "2026-02-19T00:34:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-123",
+    "text": "same payment removal issue",
+    "source": "slack",
+    "submittedAt": "2026-02-08T20:51:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-124",
+    "text": "Error 409 in console when clicking remove on payment method",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-28T16:08:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "neutral",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-125",
+    "text": "Clicking delete on my card shows success toast but card is still there on refresh",
+    "source": "intercom",
+    "submittedAt": "2026-02-19T12:25:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "positive",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-126",
+    "text": "The remove button works for some cards but not others. Very inconsistent.",
+    "source": "survey",
+    "submittedAt": "2026-02-09T08:42:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-127",
+    "text": "Payment method removal is completely broken as far as I can tell",
+    "source": "app-store",
+    "submittedAt": "2026-03-01T04:59:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-128",
+    "text": "Can't remove any of my 3 saved cards. Tried different browsers too.",
+    "source": "slack",
+    "submittedAt": "2026-02-19T00:16:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "screenshotUrl": "/screenshots/placeholder-16.svg"
+  },
+  {
+    "id": "entry-129",
+    "text": "the thing with the payment is weird",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-08T20:33:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "neutral",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-130",
+    "text": "I deleted my card but it came back after refresh",
+    "source": "intercom",
+    "submittedAt": "2026-02-28T16:50:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "positive",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-131",
+    "text": "Please help me remove my expired credit card from the system",
+    "source": "survey",
+    "submittedAt": "2026-02-19T12:07:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-132",
+    "text": "I need to delete my payment info for security reasons but it won't let me",
+    "source": "app-store",
+    "submittedAt": "2026-02-09T08:24:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-133",
+    "text": "Tried to remove my card 5 times. It either comes back or shows an error.",
+    "source": "slack",
+    "submittedAt": "2026-03-01T04:41:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-134",
+    "text": "Support had to manually remove my card. This should work in the UI.",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-19T00:58:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "neutral",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-135",
+    "text": "Why is it so hard to remove a payment method?",
+    "source": "intercom",
+    "submittedAt": "2026-02-08T20:15:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "positive",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-136",
+    "text": "The payment methods page is broken. Remove button doesn't do anything.",
+    "source": "survey",
+    "submittedAt": "2026-02-28T16:32:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-137",
+    "text": "Card appears deleted then magically reappears on the next page load",
+    "source": "app-store",
+    "submittedAt": "2026-02-19T12:49:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-138",
+    "text": "Worried about security since I can't remove my payment information",
+    "source": "slack",
+    "submittedAt": "2026-02-09T08:06:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "screenshotUrl": "/screenshots/placeholder-16.svg"
+  },
+  {
+    "id": "entry-139",
+    "text": "The remove payment method feature hasn't worked for me in months",
+    "source": "support-ticket",
+    "submittedAt": "2026-03-01T04:23:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "neutral",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-140",
+    "text": "same payment removal issue",
+    "source": "intercom",
+    "submittedAt": "2026-02-19T00:40:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "positive",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-141",
+    "text": "Error 409 in console when clicking remove on payment method",
+    "source": "survey",
+    "submittedAt": "2026-02-08T20:57:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-142",
+    "text": "Clicking delete on my card shows success toast but card is still there on refresh",
+    "source": "app-store",
+    "submittedAt": "2026-02-28T16:14:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-143",
+    "text": "The remove button works for some cards but not others. Very inconsistent.",
+    "source": "slack",
+    "submittedAt": "2026-02-19T12:31:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-144",
+    "text": "Payment method removal is completely broken as far as I can tell",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-09T08:48:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "neutral",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-145",
+    "text": "Can't remove any of my 3 saved cards. Tried different browsers too.",
+    "source": "intercom",
+    "submittedAt": "2026-03-01T04:05:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "positive",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-146",
+    "text": "the thing with the payment is weird",
+    "source": "survey",
+    "submittedAt": "2026-02-19T00:22:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-147",
+    "text": "I deleted my card but it came back after refresh",
+    "source": "app-store",
+    "submittedAt": "2026-02-08T20:39:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-148",
+    "text": "Please help me remove my expired credit card from the system",
+    "source": "slack",
+    "submittedAt": "2026-02-28T16:56:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "screenshotUrl": "/screenshots/placeholder-16.svg"
+  },
+  {
+    "id": "entry-149",
+    "text": "I need to delete my payment info for security reasons but it won't let me",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-19T12:13:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "neutral",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-150",
+    "text": "Tried to remove my card 5 times. It either comes back or shows an error.",
+    "source": "intercom",
+    "submittedAt": "2026-02-09T08:30:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "positive",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-151",
+    "text": "Support had to manually remove my card. This should work in the UI.",
+    "source": "survey",
+    "submittedAt": "2026-03-01T04:47:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-152",
+    "text": "Why is it so hard to remove a payment method?",
+    "source": "app-store",
+    "submittedAt": "2026-02-19T00:04:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "negative",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-153",
+    "text": "The payment methods page is broken. Remove button doesn't do anything.",
+    "source": "slack",
+    "submittedAt": "2026-02-08T20:21:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "negative",
+    "groupId": "grp-005",
+    "screenshotUrl": "/screenshots/placeholder-06.svg"
+  },
+  {
+    "id": "entry-154",
+    "text": "Card appears deleted then magically reappears on the next page load",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-28T16:38:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "neutral",
+    "groupId": "grp-005"
+  },
+  {
+    "id": "entry-155",
+    "text": "contrast is bad in dark mode",
+    "source": "app-store",
+    "submittedAt": "2026-03-03T14:55:00.000Z",
+    "userName": "Charlie S.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-156",
+    "text": "The colors in dark mode need work",
+    "source": "slack",
+    "submittedAt": "2026-02-21T10:12:00.000Z",
+    "userName": "Pat G.",
+    "sentiment": "neutral",
+    "groupId": "grp-006",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-157",
+    "text": "Gray text on dark gray background is invisible",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-11T06:29:00.000Z",
+    "userName": "Dana C.",
+    "sentiment": "positive",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-158",
+    "text": "Table borders disappear in dark mode",
+    "source": "intercom",
+    "submittedAt": "2026-03-03T02:46:00.000Z",
+    "userName": "Alex M.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-159",
+    "text": "The placeholder text in forms is practically invisible in dark mode",
+    "source": "survey",
+    "submittedAt": "2026-02-20T22:03:00.000Z",
+    "userName": "Morgan W.",
+    "sentiment": "negative",
+    "groupId": "grp-006",
+    "screenshotUrl": "/screenshots/placeholder-04.svg"
+  },
+  {
+    "id": "entry-160",
+    "text": "Switched back to light mode because I couldn't read anything in dark mode",
+    "source": "app-store",
+    "submittedAt": "2026-02-10T18:20:00.000Z",
+    "userName": "Jamie F.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-161",
+    "text": "Eye strain from using dark mode because I'm squinting to read labels",
+    "source": "slack",
+    "submittedAt": "2026-03-03T14:37:00.000Z",
+    "userName": "Parker D.",
+    "sentiment": "neutral",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-162",
+    "text": "Need to increase contrast for secondary text in dark mode",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-21T10:54:00.000Z",
+    "userName": "Skyler M.",
+    "sentiment": "positive",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-163",
+    "text": "Some input fields have dark text on dark background in dark mode",
+    "source": "intercom",
+    "submittedAt": "2026-02-11T06:11:00.000Z",
+    "userName": "Charlie S.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-164",
+    "text": "My colleague with low vision can't use dark mode at all",
+    "source": "survey",
+    "submittedAt": "2026-03-03T02:28:00.000Z",
+    "userName": "Pat G.",
+    "sentiment": "negative",
+    "groupId": "grp-006",
+    "screenshotUrl": "/screenshots/placeholder-14.svg"
+  },
+  {
+    "id": "entry-165",
+    "text": "Using dark mode gives me headaches because I strain to read the text",
+    "source": "app-store",
+    "submittedAt": "2026-02-20T22:45:00.000Z",
+    "userName": "Dana C.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-166",
+    "text": "contrast is bad in dark mode",
+    "source": "slack",
+    "submittedAt": "2026-02-10T18:02:00.000Z",
+    "userName": "Alex M.",
+    "sentiment": "neutral",
+    "groupId": "grp-006",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-167",
+    "text": "The colors in dark mode need work",
+    "source": "support-ticket",
+    "submittedAt": "2026-03-03T14:19:00.000Z",
+    "userName": "Morgan W.",
+    "sentiment": "positive",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-168",
+    "text": "Gray text on dark gray background is invisible",
+    "source": "intercom",
+    "submittedAt": "2026-02-21T10:36:00.000Z",
+    "userName": "Jamie F.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-169",
+    "text": "Table borders disappear in dark mode",
+    "source": "survey",
+    "submittedAt": "2026-02-11T06:53:00.000Z",
+    "userName": "Parker D.",
+    "sentiment": "negative",
+    "groupId": "grp-006",
+    "screenshotUrl": "/screenshots/placeholder-04.svg"
+  },
+  {
+    "id": "entry-170",
+    "text": "The placeholder text in forms is practically invisible in dark mode",
+    "source": "app-store",
+    "submittedAt": "2026-03-03T02:10:00.000Z",
+    "userName": "Skyler M.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-171",
+    "text": "Switched back to light mode because I couldn't read anything in dark mode",
+    "source": "slack",
+    "submittedAt": "2026-02-20T22:27:00.000Z",
+    "userName": "Charlie S.",
+    "sentiment": "neutral",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-172",
+    "text": "Eye strain from using dark mode because I'm squinting to read labels",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-10T18:44:00.000Z",
+    "userName": "Pat G.",
+    "sentiment": "positive",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-173",
+    "text": "Need to increase contrast for secondary text in dark mode",
+    "source": "intercom",
+    "submittedAt": "2026-03-03T14:01:00.000Z",
+    "userName": "Dana C.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-174",
+    "text": "Some input fields have dark text on dark background in dark mode",
+    "source": "survey",
+    "submittedAt": "2026-02-21T10:18:00.000Z",
+    "userName": "Alex M.",
+    "sentiment": "negative",
+    "groupId": "grp-006",
+    "screenshotUrl": "/screenshots/placeholder-14.svg"
+  },
+  {
+    "id": "entry-175",
+    "text": "My colleague with low vision can't use dark mode at all",
+    "source": "app-store",
+    "submittedAt": "2026-02-11T06:35:00.000Z",
+    "userName": "Morgan W.",
+    "sentiment": "negative",
+    "groupId": "grp-006"
+  },
+  {
+    "id": "entry-176",
+    "text": "Using dark mode gives me headaches because I strain to read the text",
+    "source": "slack",
+    "submittedAt": "2026-03-03T02:52:00.000Z",
+    "userName": "Jamie F.",
+    "sentiment": "neutral",
+    "groupId": "grp-006",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-177",
+    "text": "The exported CSV has encoding issues with accented characters",
+    "source": "intercom",
+    "submittedAt": "2026-02-27T12:09:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "neutral",
+    "groupId": "grp-007",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-178",
+    "text": "Manually converting CSV to Excel every week is getting old",
+    "source": "survey",
+    "submittedAt": "2026-02-17T08:26:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "positive",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-179",
+    "text": "Can you add PDF export?",
+    "source": "app-store",
+    "submittedAt": "2026-02-07T04:43:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-180",
+    "text": "Need to export as .xlsx for our reports",
+    "source": "slack",
+    "submittedAt": "2026-02-27T00:00:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-181",
+    "text": "Export feature needs more format options",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-16T20:17:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-182",
+    "text": "We need PDF exports for client presentations",
+    "source": "intercom",
+    "submittedAt": "2026-02-06T16:34:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "neutral",
+    "groupId": "grp-007",
+    "screenshotUrl": "/screenshots/placeholder-08.svg"
+  },
+  {
+    "id": "entry-183",
+    "text": "The unicode characters in our data get garbled in CSV export",
+    "source": "survey",
+    "submittedAt": "2026-02-27T12:51:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "positive",
+    "groupId": "grp-007",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-184",
+    "text": "CSV export takes too long for datasets over 5000 rows",
+    "source": "app-store",
+    "submittedAt": "2026-02-17T08:08:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-185",
+    "text": "The export feature is half-baked. Only CSV and it doesn't even work properly.",
+    "source": "slack",
+    "submittedAt": "2026-02-07T04:25:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-186",
+    "text": "Can't share CSV files with management -- they only use PDF and Excel",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-27T00:42:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-187",
+    "text": "The exported CSV has encoding issues with accented characters",
+    "source": "intercom",
+    "submittedAt": "2026-02-16T20:59:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "neutral",
+    "groupId": "grp-007",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-188",
+    "text": "Manually converting CSV to Excel every week is getting old",
+    "source": "survey",
+    "submittedAt": "2026-02-06T16:16:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "positive",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-189",
+    "text": "Can you add PDF export?",
+    "source": "app-store",
+    "submittedAt": "2026-02-27T12:33:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-190",
+    "text": "Need to export as .xlsx for our reports",
+    "source": "slack",
+    "submittedAt": "2026-02-17T08:50:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-191",
+    "text": "Export feature needs more format options",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-07T04:07:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-192",
+    "text": "We need PDF exports for client presentations",
+    "source": "intercom",
+    "submittedAt": "2026-02-27T00:24:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "neutral",
+    "groupId": "grp-007",
+    "screenshotUrl": "/screenshots/placeholder-08.svg"
+  },
+  {
+    "id": "entry-193",
+    "text": "The unicode characters in our data get garbled in CSV export",
+    "source": "survey",
+    "submittedAt": "2026-02-16T20:41:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "positive",
+    "groupId": "grp-007",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-194",
+    "text": "CSV export takes too long for datasets over 5000 rows",
+    "source": "app-store",
+    "submittedAt": "2026-02-06T16:58:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-195",
+    "text": "The export feature is half-baked. Only CSV and it doesn't even work properly.",
+    "source": "slack",
+    "submittedAt": "2026-02-27T12:15:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-196",
+    "text": "Can't share CSV files with management -- they only use PDF and Excel",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-17T08:32:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "negative",
+    "groupId": "grp-007"
+  },
+  {
+    "id": "entry-197",
+    "text": "notification settings don't stick",
+    "source": "intercom",
+    "submittedAt": "2026-02-07T08:49:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "neutral",
+    "groupId": "grp-008",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-198",
+    "text": "Is it a known issue that notification preferences reset on logout?",
+    "source": "survey",
+    "submittedAt": "2026-02-27T04:06:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "positive",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-199",
+    "text": "The notification settings page says changes saved but they clearly aren't",
+    "source": "app-store",
+    "submittedAt": "2026-02-17T00:23:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-200",
+    "text": "After clearing browser cache all my notification preferences disappeared",
+    "source": "slack",
+    "submittedAt": "2026-02-06T20:40:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-201",
+    "text": "My team all had their notification prefs reset after Monday's update",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-26T16:57:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-202",
+    "text": "Why do I need to re-disable marketing notifications every week?",
+    "source": "intercom",
+    "submittedAt": "2026-02-17T12:14:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "neutral",
+    "groupId": "grp-008",
+    "screenshotUrl": "/screenshots/placeholder-08.svg"
+  },
+  {
+    "id": "entry-203",
+    "text": "browser update reset all my settings including notifications",
+    "source": "survey",
+    "submittedAt": "2026-02-07T08:31:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "positive",
+    "groupId": "grp-008",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-204",
+    "text": "I turned off marketing emails but they came back",
+    "source": "app-store",
+    "submittedAt": "2026-02-27T04:48:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-205",
+    "text": "Every time I log in my notification prefs are gone",
+    "source": "slack",
+    "submittedAt": "2026-02-17T00:05:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-206",
+    "text": "Notification preferences don't save properly",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-06T20:22:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-207",
+    "text": "Settings reset when switching between devices",
+    "source": "intercom",
+    "submittedAt": "2026-02-26T16:39:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "neutral",
+    "groupId": "grp-008",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-208",
+    "text": "Turned off all optional notifications yesterday, today they're all back on",
+    "source": "survey",
+    "submittedAt": "2026-02-17T12:56:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "positive",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-209",
+    "text": "I set my preferences on desktop but they're different on mobile",
+    "source": "app-store",
+    "submittedAt": "2026-02-07T08:13:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-210",
+    "text": "Getting spammed with notifications I already disabled",
+    "source": "slack",
+    "submittedAt": "2026-02-27T04:30:00.000Z",
+    "userName": "Emerson J.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-211",
+    "text": "Can you please persist notification settings on the server side?",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-17T00:47:00.000Z",
+    "userName": "Phoenix T.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-212",
+    "text": "I've given up customizing notifications since they always reset",
+    "source": "intercom",
+    "submittedAt": "2026-02-06T20:04:00.000Z",
+    "userName": "Frankie P.",
+    "sentiment": "neutral",
+    "groupId": "grp-008",
+    "screenshotUrl": "/screenshots/placeholder-08.svg"
+  },
+  {
+    "id": "entry-213",
+    "text": "Notification settings should sync across devices but they don't",
+    "source": "survey",
+    "submittedAt": "2026-02-26T16:21:00.000Z",
+    "userName": "Lee W.",
+    "sentiment": "positive",
+    "groupId": "grp-008",
+    "sessionId": "stub-session-02"
+  },
+  {
+    "id": "entry-214",
+    "text": "My notification settings keep resetting",
+    "source": "app-store",
+    "submittedAt": "2026-02-17T12:38:00.000Z",
+    "userName": "Terry V.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-215",
+    "text": "notifications reset after update",
+    "source": "slack",
+    "submittedAt": "2026-02-07T08:55:00.000Z",
+    "userName": "Jordan P.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-216",
+    "text": "Had to reconfigure notifications again after the latest update",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-27T04:12:00.000Z",
+    "userName": "Taylor L.",
+    "sentiment": "negative",
+    "groupId": "grp-008"
+  },
+  {
+    "id": "entry-217",
+    "text": "I disabled weekly digest but still get it",
+    "source": "intercom",
+    "submittedAt": "2026-02-17T00:29:00.000Z",
+    "userName": "Reese C.",
+    "sentiment": "neutral",
+    "groupId": "grp-008",
+    "screenshotUrl": "/screenshots/placeholder-18.svg"
+  },
+  {
+    "id": "entry-218",
+    "text": "My photo from iPhone won't upload",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-09T17:46:00.000Z",
+    "userName": "Hayden G.",
+    "sentiment": "positive",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-219",
+    "text": "The image upload doesn't accept HEIC files from my phone",
+    "source": "intercom",
+    "submittedAt": "2026-03-02T13:03:00.000Z",
+    "userName": "Rowan E.",
+    "sentiment": "negative",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-220",
+    "text": "I tried uploading a profile photo 4 times with different files",
+    "source": "survey",
+    "submittedAt": "2026-02-20T09:20:00.000Z",
+    "userName": "Jessie L.",
+    "sentiment": "negative",
+    "groupId": "grp-009",
+    "screenshotUrl": "/screenshots/placeholder-03.svg",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-221",
+    "text": "The upload progress bar freezes near the end then times out",
+    "source": "app-store",
+    "submittedAt": "2026-02-10T05:37:00.000Z",
+    "userName": "Cameron N.",
+    "sentiment": "negative",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-222",
+    "text": "Can you accept more image formats? My phone saves as HEIC.",
+    "source": "slack",
+    "submittedAt": "2026-03-02T01:54:00.000Z",
+    "userName": "Jules D.",
+    "sentiment": "neutral",
+    "groupId": "grp-009",
+    "screenshotUrl": "/screenshots/placeholder-07.svg"
+  },
+  {
+    "id": "entry-223",
+    "text": "Had to resize my photo to under 2MB just to upload it as profile pic",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-19T21:11:00.000Z",
+    "userName": "Val T.",
+    "sentiment": "positive",
+    "groupId": "grp-009",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-224",
+    "text": "Profile image becomes pixelated after upload even though the original was high quality",
+    "source": "intercom",
+    "submittedAt": "2026-02-09T17:28:00.000Z",
+    "userName": "Casey B.",
+    "sentiment": "negative",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-225",
+    "text": "Why can't I just drag and drop a profile picture?",
+    "source": "survey",
+    "submittedAt": "2026-03-02T13:45:00.000Z",
+    "userName": "Drew H.",
+    "sentiment": "negative",
+    "groupId": "grp-009",
+    "screenshotUrl": "/screenshots/placeholder-13.svg"
+  },
+  {
+    "id": "entry-226",
+    "text": "Can't upload my profile picture",
+    "source": "app-store",
+    "submittedAt": "2026-02-20T09:02:00.000Z",
+    "userName": "Hayden G.",
+    "sentiment": "negative",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-227",
+    "text": "My photo from iPhone won't upload",
+    "source": "slack",
+    "submittedAt": "2026-02-10T05:19:00.000Z",
+    "userName": "Rowan E.",
+    "sentiment": "neutral",
+    "groupId": "grp-009",
+    "screenshotUrl": "/screenshots/placeholder-17.svg"
+  },
+  {
+    "id": "entry-228",
+    "text": "The image upload doesn't accept HEIC files from my phone",
+    "source": "support-ticket",
+    "submittedAt": "2026-03-02T01:36:00.000Z",
+    "userName": "Jessie L.",
+    "sentiment": "positive",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-229",
+    "text": "I tried uploading a profile photo 4 times with different files",
+    "source": "intercom",
+    "submittedAt": "2026-02-19T21:53:00.000Z",
+    "userName": "Cameron N.",
+    "sentiment": "negative",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-230",
+    "text": "The upload progress bar freezes near the end then times out",
+    "source": "survey",
+    "submittedAt": "2026-02-09T17:10:00.000Z",
+    "userName": "Jules D.",
+    "sentiment": "negative",
+    "groupId": "grp-009",
+    "screenshotUrl": "/screenshots/placeholder-03.svg",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-231",
+    "text": "Can you accept more image formats? My phone saves as HEIC.",
+    "source": "app-store",
+    "submittedAt": "2026-03-02T13:27:00.000Z",
+    "userName": "Val T.",
+    "sentiment": "negative",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-232",
+    "text": "Had to resize my photo to under 2MB just to upload it as profile pic",
+    "source": "slack",
+    "submittedAt": "2026-02-20T09:44:00.000Z",
+    "userName": "Casey B.",
+    "sentiment": "neutral",
+    "groupId": "grp-009",
+    "screenshotUrl": "/screenshots/placeholder-07.svg"
+  },
+  {
+    "id": "entry-233",
+    "text": "Profile image becomes pixelated after upload even though the original was high quality",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-10T05:01:00.000Z",
+    "userName": "Drew H.",
+    "sentiment": "positive",
+    "groupId": "grp-009",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-234",
+    "text": "Why can't I just drag and drop a profile picture?",
+    "source": "intercom",
+    "submittedAt": "2026-03-02T01:18:00.000Z",
+    "userName": "Hayden G.",
+    "sentiment": "negative",
+    "groupId": "grp-009"
+  },
+  {
+    "id": "entry-235",
+    "text": "Can't upload my profile picture",
+    "source": "survey",
+    "submittedAt": "2026-02-19T21:35:00.000Z",
+    "userName": "Rowan E.",
+    "sentiment": "negative",
+    "groupId": "grp-009",
+    "screenshotUrl": "/screenshots/placeholder-13.svg"
+  },
+  {
+    "id": "entry-236",
+    "text": "Arrow keys don't work for navigating the menu",
+    "source": "survey",
+    "submittedAt": "2026-03-06T11:52:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "neutral",
+    "groupId": "grp-010",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-237",
+    "text": "Please add aria labels to the navigation elements",
+    "source": "app-store",
+    "submittedAt": "2026-02-24T07:09:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "positive",
+    "groupId": "grp-010",
+    "screenshotUrl": "/screenshots/placeholder-19.svg"
+  },
+  {
+    "id": "entry-238",
+    "text": "Can't navigate the menu with keyboard",
+    "source": "slack",
+    "submittedAt": "2026-02-14T03:26:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "negative",
+    "groupId": "grp-010"
+  },
+  {
+    "id": "entry-239",
+    "text": "Screen reader doesn't work well with the nav menu",
+    "source": "support-ticket",
+    "submittedAt": "2026-03-05T23:43:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "negative",
+    "groupId": "grp-010",
+    "screenshotUrl": "/screenshots/placeholder-03.svg"
+  },
+  {
+    "id": "entry-240",
+    "text": "Tab order is wrong in the navigation",
+    "source": "intercom",
+    "submittedAt": "2026-02-23T19:00:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-010"
+  },
+  {
+    "id": "entry-241",
+    "text": "nav menu needs keyboard support",
+    "source": "survey",
+    "submittedAt": "2026-02-13T15:17:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "neutral",
+    "groupId": "grp-010"
+  },
+  {
+    "id": "entry-242",
+    "text": "Using VoiceOver and the menu doesn't announce menu items properly",
+    "source": "app-store",
+    "submittedAt": "2026-03-06T11:34:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "positive",
+    "groupId": "grp-010",
+    "screenshotUrl": "/screenshots/placeholder-09.svg"
+  },
+  {
+    "id": "entry-243",
+    "text": "Keyboard users can't access submenu items at all",
+    "source": "slack",
+    "submittedAt": "2026-02-24T07:51:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "negative",
+    "groupId": "grp-010",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-244",
+    "text": "Arrow keys don't work for navigating the menu",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-14T03:08:00.000Z",
+    "userName": "Kendall R.",
+    "sentiment": "negative",
+    "groupId": "grp-010",
+    "screenshotUrl": "/screenshots/placeholder-13.svg"
+  },
+  {
+    "id": "entry-245",
+    "text": "Please add aria labels to the navigation elements",
+    "source": "intercom",
+    "submittedAt": "2026-03-05T23:25:00.000Z",
+    "userName": "Max F.",
+    "sentiment": "negative",
+    "groupId": "grp-010"
+  },
+  {
+    "id": "entry-246",
+    "text": "Can't navigate the menu with keyboard",
+    "source": "survey",
+    "submittedAt": "2026-02-23T19:42:00.000Z",
+    "userName": "Noel M.",
+    "sentiment": "neutral",
+    "groupId": "grp-010",
+    "sessionId": "stub-session-01"
+  },
+  {
+    "id": "entry-247",
+    "text": "Screen reader doesn't work well with the nav menu",
+    "source": "app-store",
+    "submittedAt": "2026-02-13T15:59:00.000Z",
+    "userName": "Riley T.",
+    "sentiment": "positive",
+    "groupId": "grp-010",
+    "screenshotUrl": "/screenshots/placeholder-19.svg"
+  },
+  {
+    "id": "entry-248",
+    "text": "Tab order is wrong in the navigation",
+    "source": "slack",
+    "submittedAt": "2026-03-06T11:16:00.000Z",
+    "userName": "Quinn R.",
+    "sentiment": "negative",
+    "groupId": "grp-010"
+  },
+  {
+    "id": "entry-249",
+    "text": "nav menu needs keyboard support",
+    "source": "support-ticket",
+    "submittedAt": "2026-02-24T07:33:00.000Z",
+    "userName": "Sage V.",
+    "sentiment": "negative",
+    "groupId": "grp-010",
+    "screenshotUrl": "/screenshots/placeholder-03.svg"
+  },
+  {
+    "id": "entry-250",
+    "text": "Using VoiceOver and the menu doesn't announce menu items properly",
+    "source": "intercom",
+    "submittedAt": "2026-02-14T03:50:00.000Z",
+    "userName": "Dakota W.",
+    "sentiment": "negative",
+    "groupId": "grp-010"
+  },
+  {
+    "id": "entry-251",
+    "text": "Keyboard users can't access submenu items at all",
+    "source": "survey",
+    "submittedAt": "2026-03-05T23:07:00.000Z",
+    "userName": "Ash B.",
+    "sentiment": "neutral",
+    "groupId": "grp-010"
+  }
+]

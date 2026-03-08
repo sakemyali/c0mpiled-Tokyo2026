@@ -1,0 +1,241 @@
+[
+  {
+    "id": "grp-001",
+    "title": "Checkout Flow Crashes on Mobile",
+    "summary": "Multiple users report the checkout process crashing or freezing on mobile devices, particularly during payment confirmation.",
+    "severity": "critical",
+    "entryCount": 0,
+    "categories": ["mobile", "payments", "ux"],
+    "aiSummary": {
+      "problem": "The checkout flow consistently crashes on mobile browsers (Safari iOS and Chrome Android) when users attempt to confirm payment. The crash occurs after the user taps the 'Confirm Payment' button, with the page either freezing completely or showing a blank white screen. This affects approximately 35% of mobile checkout attempts based on error logs.",
+      "impact": "Mobile users are unable to complete purchases, leading to cart abandonment and direct revenue loss. Users report having to switch to desktop to finish orders, with many giving up entirely. Support ticket volume for checkout issues has tripled in the past two weeks.",
+      "reproductionSteps": [
+        "Open the app on any mobile browser (Safari iOS or Chrome Android)",
+        "Add one or more items to the shopping cart",
+        "Proceed to checkout and fill in shipping details",
+        "Enter payment information and tap 'Confirm Payment'",
+        "Observe the page freeze or crash to a blank white screen"
+      ],
+      "suggestion": "Investigate the payment confirmation handler for memory-intensive operations that exceed mobile browser limits. Consider implementing progressive loading for the confirmation step, and add a fallback payment flow that doesn't rely on client-side processing. Add crash reporting specifically for the checkout flow."
+    },
+    "duplicateCount": 12,
+    "trendDirection": "up",
+    "firstReported": "2026-02-10T08:23:00Z",
+    "lastReported": "2026-03-07T16:45:00Z"
+  },
+  {
+    "id": "grp-002",
+    "title": "Search Results Not Relevant",
+    "summary": "Users consistently find that search results don't match their queries, returning unrelated or outdated content.",
+    "severity": "high",
+    "entryCount": 0,
+    "categories": ["ux", "data", "performance"],
+    "aiSummary": {
+      "problem": "The search functionality returns results that are poorly matched to user queries. Exact keyword matches are buried under irrelevant results, and the search does not account for common misspellings or synonyms. Product searches often return items from completely different categories.",
+      "impact": "Users are unable to find products efficiently, leading to increased bounce rates on search result pages. Internal analytics show that 60% of users who search leave without clicking a result. Customer satisfaction scores for the search feature are at 2.1/5.",
+      "reproductionSteps": [
+        "Navigate to the search bar on any page",
+        "Type a specific product name (e.g., 'wireless headphones')",
+        "Observe that top results include unrelated categories like cables and adapters",
+        "Try a misspelled query (e.g., 'wireles headphons') and note zero results returned"
+      ],
+      "suggestion": "Implement fuzzy matching and synonym support in the search index. Consider adding search result relevance scoring based on user interaction data. Prioritize exact matches and recently popular items. Evaluate switching to a dedicated search engine like Elasticsearch or Algolia."
+    },
+    "duplicateCount": 8,
+    "trendDirection": "stable",
+    "firstReported": "2026-02-01T14:12:00Z",
+    "lastReported": "2026-03-06T09:30:00Z"
+  },
+  {
+    "id": "grp-003",
+    "title": "Onboarding Tutorial Skips Steps",
+    "summary": "New users report that the onboarding tutorial skips critical steps or advances too quickly, leaving them confused about key features.",
+    "severity": "high",
+    "entryCount": 0,
+    "categories": ["onboarding", "ux", "navigation"],
+    "aiSummary": {
+      "problem": "The onboarding tutorial intermittently skips steps 3 and 4 (workspace setup and notification preferences), jumping directly from profile creation to the main dashboard. This appears to be triggered by rapid clicking or slow network connections causing race conditions in the tutorial state machine.",
+      "impact": "New users miss critical setup steps, leading to a poor first experience. Users who skip workspace setup cannot collaborate with team members until they manually find the settings. 40% of new users contact support within their first week asking about features covered in the skipped steps.",
+      "reproductionSteps": [
+        "Create a new account and begin the onboarding flow",
+        "Complete step 1 (account details) and step 2 (profile creation)",
+        "Quickly click 'Next' on step 2 before the animation completes",
+        "Observe that steps 3 and 4 are skipped, landing directly on the dashboard",
+        "Alternatively, throttle network to 3G speed and proceed normally to trigger the same skip"
+      ],
+      "suggestion": "Refactor the tutorial state machine to use explicit step completion flags rather than animation-based transitions. Add a progress indicator showing all steps and allow users to navigate back. Implement a 'resume onboarding' prompt for users who skipped steps."
+    },
+    "duplicateCount": 6,
+    "trendDirection": "up",
+    "firstReported": "2026-02-15T11:00:00Z",
+    "lastReported": "2026-03-07T14:20:00Z"
+  },
+  {
+    "id": "grp-004",
+    "title": "Dashboard Loading Takes Too Long",
+    "summary": "The main dashboard takes 8-15 seconds to load, with users seeing a blank screen or spinner for extended periods.",
+    "severity": "high",
+    "entryCount": 0,
+    "categories": ["performance", "ux", "desktop"],
+    "aiSummary": {
+      "problem": "The dashboard initial load time averages 10.3 seconds, with p95 reaching 18 seconds. The primary bottleneck is the simultaneous loading of all widget data, chart rendering, and real-time connection establishment. The dashboard makes 23 separate API calls on mount, many of which could be batched or deferred.",
+      "impact": "Users perceive the application as slow and unreliable. Internal metrics show that 15% of users navigate away before the dashboard finishes loading. Power users who check the dashboard multiple times daily report significant productivity loss. Competitor dashboards load in under 3 seconds.",
+      "reproductionSteps": [
+        "Log in to the application",
+        "Navigate to the main dashboard (or land there after login)",
+        "Open browser DevTools Network tab to observe request waterfall",
+        "Note the 23 sequential API calls and large JavaScript bundle download",
+        "Measure time from navigation to fully interactive dashboard"
+      ],
+      "suggestion": "Implement data prefetching and batch API endpoints to reduce the number of network requests. Add skeleton loading states for each widget to improve perceived performance. Defer non-critical widget loading (charts, activity feed) until after the primary content renders. Consider server-side rendering for the initial dashboard view."
+    },
+    "duplicateCount": 9,
+    "trendDirection": "stable",
+    "firstReported": "2026-01-20T09:15:00Z",
+    "lastReported": "2026-03-05T17:00:00Z"
+  },
+  {
+    "id": "grp-005",
+    "title": "Payment Method Removal Fails",
+    "summary": "Users are unable to remove saved payment methods, encountering silent failures or error messages when attempting deletion.",
+    "severity": "critical",
+    "entryCount": 0,
+    "categories": ["payments", "ux", "data"],
+    "aiSummary": {
+      "problem": "The 'Remove Payment Method' action fails silently for credit cards that have been used in active subscriptions. The UI shows a success message and briefly removes the card from the list, but on page refresh the card reappears. For cards linked to past transactions, clicking remove triggers an unhelpful 'Something went wrong' error with no guidance.",
+      "impact": "Users feel they have lost control over their financial data, creating trust and compliance concerns. Several users have reported this as a potential GDPR violation. Support receives 15-20 tickets per week about this issue, requiring manual intervention from the billing team to resolve each case.",
+      "reproductionSteps": [
+        "Navigate to Account Settings > Payment Methods",
+        "Click 'Remove' on any saved credit card that has been used for a purchase",
+        "If the card is linked to an active subscription, observe the optimistic removal followed by reappearance on refresh",
+        "If the card is linked to past transactions only, observe the 'Something went wrong' error message",
+        "Check the browser console for a 409 Conflict error from the API"
+      ],
+      "suggestion": "Implement proper error handling that explains why a payment method cannot be removed (e.g., active subscription). For cards linked to active subscriptions, guide users to update their subscription payment method first. For cards linked only to past transactions, fix the backend constraint that incorrectly prevents removal. Add a 'Replace Payment Method' flow as an alternative."
+    },
+    "duplicateCount": 7,
+    "trendDirection": "up",
+    "firstReported": "2026-02-05T13:45:00Z",
+    "lastReported": "2026-03-08T10:15:00Z"
+  },
+  {
+    "id": "grp-006",
+    "title": "Dark Mode Color Contrast Issues",
+    "summary": "Multiple UI elements become unreadable or invisible in dark mode due to insufficient color contrast between text and backgrounds.",
+    "severity": "medium",
+    "entryCount": 0,
+    "categories": ["accessibility", "ux", "desktop"],
+    "aiSummary": {
+      "problem": "Dark mode implementation has widespread contrast issues affecting readability. Gray text on dark gray backgrounds falls below WCAG AA standards in multiple areas: secondary labels, placeholder text, disabled button states, and table borders. The severity badges use colors that become indistinguishable on dark backgrounds.",
+      "impact": "Users with visual impairments cannot use dark mode effectively, limiting accessibility. Even users with normal vision report eye strain when using dark mode for extended periods. Approximately 45% of users prefer dark mode, making this a high-impact accessibility issue affecting nearly half the user base.",
+      "reproductionSteps": [
+        "Enable dark mode in user preferences",
+        "Navigate to any data table and observe that row borders are nearly invisible",
+        "Check form input placeholder text which appears as dark gray on slightly darker gray",
+        "View the severity badges (especially 'medium' yellow on dark background)",
+        "Use a contrast checker tool to verify WCAG AA compliance on secondary text elements"
+      ],
+      "suggestion": "Audit all dark mode color tokens against WCAG AA contrast ratios (4.5:1 for normal text, 3:1 for large text). Create a dedicated dark mode color palette that maintains sufficient contrast rather than simply inverting or dimming light mode colors. Consider using a design tool with built-in accessibility checking for future color changes."
+    },
+    "duplicateCount": 5,
+    "trendDirection": "stable",
+    "firstReported": "2026-02-12T16:30:00Z",
+    "lastReported": "2026-03-04T11:00:00Z"
+  },
+  {
+    "id": "grp-007",
+    "title": "Export Feature Missing File Formats",
+    "summary": "The data export feature only supports CSV, but users need PDF and Excel formats for reporting and compliance purposes.",
+    "severity": "medium",
+    "entryCount": 0,
+    "categories": ["export", "data", "ux"],
+    "aiSummary": {
+      "problem": "The export functionality currently only generates CSV files. Users need PDF exports for management reports and client presentations, and Excel (.xlsx) exports for data analysis with formulas and pivot tables. The CSV export also has issues: it doesn't handle commas within fields correctly, unicode characters are garbled, and large exports (>10k rows) time out.",
+      "impact": "Teams are manually converting CSV files to other formats, wasting approximately 2-3 hours per week per team. Some enterprise clients have flagged this as a contract requirement gap. The broken CSV handling for special characters has caused data integrity issues in downstream reporting systems.",
+      "reproductionSteps": [
+        "Navigate to any data view with export capability",
+        "Click the 'Export' button and observe only CSV is available",
+        "Export a dataset containing commas in text fields and observe broken column alignment",
+        "Export a dataset with unicode characters (accented names, CJK text) and observe garbled output",
+        "Attempt to export more than 10,000 rows and observe timeout error"
+      ],
+      "suggestion": "Add PDF and Excel export options using libraries like PDFKit and ExcelJS. Fix the CSV export to properly escape fields with commas (RFC 4180 compliance). Implement streaming export for large datasets to prevent timeouts. Consider adding export scheduling for very large datasets."
+    },
+    "duplicateCount": 4,
+    "trendDirection": "down",
+    "firstReported": "2026-01-15T10:00:00Z",
+    "lastReported": "2026-03-02T08:45:00Z"
+  },
+  {
+    "id": "grp-008",
+    "title": "Notification Settings Not Persisting",
+    "summary": "Users report that their notification preferences reset to defaults after logging out or after app updates.",
+    "severity": "medium",
+    "entryCount": 0,
+    "categories": ["notifications", "data", "ux"],
+    "aiSummary": {
+      "problem": "Notification preferences are stored in localStorage rather than the user's server-side profile. This means preferences are lost when users clear browser data, switch devices, or when the app deploys an update that changes the localStorage schema. Users must reconfigure their notification settings repeatedly.",
+      "impact": "Users receive unwanted notifications after their preferences reset, causing frustration and notification fatigue. Some users have disabled all browser notifications entirely as a workaround, meaning they miss important alerts. The issue generates 8-10 support tickets weekly.",
+      "reproductionSteps": [
+        "Navigate to Settings > Notifications and customize preferences",
+        "Disable email notifications for 'Marketing' and 'Weekly Digest'",
+        "Log out of the application and log back in",
+        "Navigate back to Settings > Notifications",
+        "Observe that all notification preferences have reset to defaults (all enabled)"
+      ],
+      "suggestion": "Migrate notification preferences from localStorage to the user's server-side profile. Implement a migration path that reads existing localStorage preferences and syncs them to the server on first load. Add a preferences sync mechanism that works across devices."
+    },
+    "duplicateCount": 3,
+    "trendDirection": "stable",
+    "firstReported": "2026-02-08T15:00:00Z",
+    "lastReported": "2026-03-06T12:30:00Z"
+  },
+  {
+    "id": "grp-009",
+    "title": "Profile Image Upload Errors",
+    "summary": "Profile image uploads fail frequently with unclear error messages, especially for larger files or non-standard image formats.",
+    "severity": "low",
+    "entryCount": 0,
+    "categories": ["ux", "data", "mobile"],
+    "aiSummary": {
+      "problem": "The profile image upload rejects files over 2MB without clear messaging, fails silently for WebP and HEIC formats (common on modern phones), and occasionally corrupts JPEG images during server-side resizing. The upload progress indicator freezes at 90% for files near the size limit before eventually timing out.",
+      "impact": "Users cannot set profile images on first attempt, requiring multiple tries with different files. Mobile users are disproportionately affected since phone cameras produce HEIC files by default. While not blocking core functionality, it creates a poor first impression during account setup.",
+      "reproductionSteps": [
+        "Navigate to Profile Settings and click 'Change Avatar'",
+        "Select a HEIC image from an iPhone (default camera format)",
+        "Observe the upload fail with message 'Upload failed. Please try again.'",
+        "Try again with a JPEG image larger than 2MB",
+        "Observe the progress bar freeze at approximately 90% before timing out"
+      ],
+      "suggestion": "Add client-side image format conversion (HEIC/WebP to JPEG) before upload. Increase the file size limit to 5MB and add client-side image compression. Show clear file requirements before upload (accepted formats, max size). Fix the progress indicator to accurately reflect upload status."
+    },
+    "duplicateCount": 3,
+    "trendDirection": "down",
+    "firstReported": "2026-02-20T09:30:00Z",
+    "lastReported": "2026-03-03T14:15:00Z"
+  },
+  {
+    "id": "grp-010",
+    "title": "Navigation Menu Accessibility Issues",
+    "summary": "The navigation menu is not fully keyboard-accessible and lacks proper ARIA labels, making it difficult for screen reader users.",
+    "severity": "low",
+    "entryCount": 0,
+    "categories": ["accessibility", "navigation", "ux"],
+    "aiSummary": {
+      "problem": "The main navigation menu has multiple accessibility failures: dropdown submenus cannot be opened with keyboard (only mouse hover), focus order skips menu items unpredictably, active page state is communicated only through color (not aria-current), and the mobile hamburger menu has no accessible label. Screen readers announce menu items without context about nesting or hierarchy.",
+      "impact": "Users who rely on keyboard navigation or screen readers cannot effectively navigate the application. This affects users with motor disabilities, visual impairments, and power users who prefer keyboard shortcuts. The issues also present compliance risks for organizations subject to accessibility regulations (ADA, Section 508, EN 301 549).",
+      "reproductionSteps": [
+        "Use Tab key to navigate to the main navigation bar",
+        "Attempt to open a dropdown submenu using Enter or Space key (fails)",
+        "Continue tabbing and observe that focus jumps to the search bar, skipping submenu items",
+        "Enable a screen reader (VoiceOver on Mac, NVDA on Windows) and navigate the menu",
+        "Note that active page is only indicated by color, not announced by screen reader"
+      ],
+      "suggestion": "Implement WAI-ARIA navigation menu pattern with proper roles (menubar, menu, menuitem). Add keyboard event handlers for Enter, Space, Arrow keys, and Escape. Use aria-current='page' for the active navigation item. Add aria-label to the mobile hamburger button. Test with screen readers (VoiceOver, NVDA) and keyboard-only navigation."
+    },
+    "duplicateCount": 2,
+    "trendDirection": "stable",
+    "firstReported": "2026-01-28T11:45:00Z",
+    "lastReported": "2026-03-01T16:00:00Z"
+  }
+]
