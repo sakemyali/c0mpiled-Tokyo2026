@@ -24,10 +24,10 @@ Requirements for hackathon demo. Each maps to roadmap phases.
 
 ### Dashboard
 
-- [ ] **DASH-01**: Dashboard displays all feedback groups as cards with title, summary snippet, entry count, and severity badge
-- [ ] **DASH-02**: Dashboard shows analytics/metrics: feedback volume, severity distribution, category breakdown (charts)
+- [x] **DASH-01**: Dashboard displays all feedback groups as cards with title, summary snippet, entry count, and severity badge
+- [x] **DASH-02**: Dashboard shows analytics/metrics: feedback volume, severity distribution, category breakdown (charts)
 - [ ] **DASH-03**: Dashboard includes graph visualization showing feedback cluster connections (Obsidian-style)
-- [ ] **DASH-04**: Dashboard presents PM-useful data: most impacted areas, trending issues, duplicate detection counts
+- [x] **DASH-04**: Dashboard presents PM-useful data: most impacted areas, trending issues, duplicate detection counts
 
 ### Detail View
 
@@ -40,9 +40,9 @@ Requirements for hackathon demo. Each maps to roadmap phases.
 ### UI/UX
 
 - [x] **UI-01**: Polished, dark-theme, demo-ready interface using shadcn/ui + Tailwind
-- [ ] **UI-02**: Smooth navigation between dashboard, detail view, and feedback form
+- [x] **UI-02**: Smooth navigation between dashboard, detail view, and feedback form
 - [ ] **UI-03**: Loading states and animations during AI processing
-- [ ] **UI-04**: Responsive enough for demo on projector/large screen
+- [x] **UI-04**: Responsive enough for demo on projector/large screen
 
 ## v2 Requirements
 
@@ -86,19 +86,19 @@ Deferred to post-hackathon.
 | AI-03 | Phase 2 | Pending |
 | AI-04 | Phase 2 | Pending |
 | AI-05 | Phase 2 | Pending |
-| DASH-01 | Phase 1 | Pending |
-| DASH-02 | Phase 1 | Pending |
+| DASH-01 | Phase 1 | Complete |
+| DASH-02 | Phase 1 | Complete |
 | DASH-03 | Phase 3 | Pending |
-| DASH-04 | Phase 1 | Pending |
+| DASH-04 | Phase 1 | Complete |
 | DETL-01 | Phase 1 | Pending |
 | DETL-02 | Phase 1 | Pending |
 | DETL-03 | Phase 1 | Pending |
 | DETL-04 | Phase 3 | Pending |
 | DETL-05 | Phase 3 | Pending |
 | UI-01 | Phase 1 | Complete |
-| UI-02 | Phase 1 | Pending |
+| UI-02 | Phase 1 | Complete |
 | UI-03 | Phase 2 | Pending |
-| UI-04 | Phase 1 | Pending |
+| UI-04 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 22 total
