@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md -- Express API server with seed data and REST endpoints
-- [ ] 01-02-PLAN.md -- Vite React frontend scaffold with shadcn/ui, dark theme, types, API client
+- [x] 01-02-PLAN.md -- Vite React frontend scaffold with shadcn/ui, dark theme, types, API client
 - [ ] 01-03-PLAN.md -- Dashboard UI (header nav, stats row, PM insights, glass-card grid)
 - [ ] 01-04-PLAN.md -- Detail panel + Analytics page (slide-in panel, charts, screenshot lightbox)
 
@@ -73,6 +73,6 @@ Phases execute in numeric order: 1 -> 2 -> 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Core UI | 1/4 | In progress | - |
+| 1. Foundation + Core UI | 2/4 | In progress | - |
 | 2. AI Pipeline + Live Input | 0/2 | Not started | - |
 | 3. Enhancements + Demo Polish | 0/2 | Not started | - |
