@@ -41,7 +41,7 @@ Requirements for hackathon demo. Each maps to roadmap phases.
 
 - [x] **UI-01**: Polished, dark-theme, demo-ready interface using shadcn/ui + Tailwind
 - [x] **UI-02**: Smooth navigation between dashboard, detail view, and feedback form
-- [ ] **UI-03**: Loading states and animations during AI processing
+- [x] **UI-03**: Loading states and animations during AI processing
 - [x] **UI-04**: Responsive enough for demo on projector/large screen
 
 ## v2 Requirements
@@ -97,7 +97,7 @@ Deferred to post-hackathon.
 | DETL-05 | Phase 3 | Pending |
 | UI-01 | Phase 1 | Complete |
 | UI-02 | Phase 1 | Complete |
-| UI-03 | Phase 2 | Pending |
+| UI-03 | Phase 2 | Complete |
 | UI-04 | Phase 1 | Complete |
 
 **Coverage:**
