@@ -89,12 +89,14 @@ export const DesktopSidebar = ({
   return (
     <motion.div
       className={cn(
-        "h-full px-4 py-4 hidden md:flex md:flex-col bg-neutral-100 dark:bg-neutral-800 w-[300px] flex-shrink-0",
+        "h-full px-4 py-4 hidden md:flex md:flex-col w-[280px] flex-shrink-0",
+        "bg-transparent",
         className
       )}
       animate={{
-        width: animate ? (open ? "300px" : "60px") : "300px"
+        width: animate ? (open ? "280px" : "60px") : "280px"
       }}
+      transition={{ duration: 0.2, ease: "easeInOut" }}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
       {...props}
@@ -114,13 +116,14 @@ export const MobileSidebar = ({
     <>
       <div
         className={cn(
-          "h-10 px-4 py-4 flex flex-row md:hidden items-center justify-between bg-neutral-100 dark:bg-neutral-800 w-full"
+          "h-14 px-4 py-4 flex flex-row md:hidden items-center justify-between w-full",
+          "border-b border-white/[0.06]"
         )}
         {...props}
       >
         <div className="flex justify-end z-20 w-full">
           <Menu
-            className="text-neutral-800 dark:text-neutral-200 cursor-pointer"
+            className="text-neutral-400 cursor-pointer hover:text-white transition-colors"
             onClick={() => setOpen(!open)}
           />
         </div>
@@ -135,12 +138,12 @@ export const MobileSidebar = ({
                 ease: "easeInOut"
               }}
               className={cn(
-                "fixed h-full w-full inset-0 bg-white dark:bg-neutral-900 p-10 z-[100] flex flex-col justify-between",
+                "fixed h-full w-full inset-0 bg-[var(--surface-0)] p-10 z-[100] flex flex-col justify-between",
                 className
               )}
             >
               <div
-                className="absolute right-10 top-10 z-50 text-neutral-800 dark:text-neutral-200 cursor-pointer"
+                className="absolute right-10 top-10 z-50 text-neutral-400 cursor-pointer hover:text-white transition-colors"
                 onClick={() => setOpen(!open)}
               >
                 <X />
@@ -157,17 +160,22 @@ export const MobileSidebar = ({
 export const SidebarLink = ({
   link,
   className,
+  active,
   ...props
 }: {
   link: Links;
   className?: string;
+  active?: boolean;
 } & Omit<React.ComponentProps<typeof Link>, "href">) => {
   const { open, animate } = useSidebar();
   return (
     <Link
       href={link.href}
       className={cn(
-        "flex items-center justify-start gap-2 group/sidebar py-2",
+        "flex items-center justify-start gap-3 group/sidebar py-2.5 px-2 rounded-xl transition-all duration-200",
+        active
+          ? "bg-white/[0.08] text-white"
+          : "text-neutral-400 hover:text-white hover:bg-white/[0.04]",
         className
       )}
       {...props}
@@ -178,7 +186,7 @@ export const SidebarLink = ({
           display: animate ? (open ? "inline-block" : "none") : "inline-block",
           opacity: animate ? (open ? 1 : 0) : 1
         }}
-        className="text-neutral-700 dark:text-neutral-200 text-sm group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0"
+        className="text-sm font-medium whitespace-pre inline-block !p-0 !m-0 transition-colors duration-200"
       >
         {link.label}
       </motion.span>

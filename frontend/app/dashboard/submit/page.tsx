@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { submitEntry } from "@/lib/api";
-import { CheckCircle2, Loader2 } from "lucide-react";
+import { CheckCircle2, Loader2, Send } from "lucide-react";
 
 const sources = [
   { value: "survey", label: "Survey" },
@@ -12,6 +13,9 @@ const sources = [
   { value: "intercom", label: "Intercom" },
 ];
 
+const inputStyles =
+  "w-full rounded-xl bg-white/[0.03] border border-white/[0.08] px-4 py-3 text-sm text-white placeholder:text-neutral-600 focus:outline-none focus:border-emerald-500/40 focus:ring-1 focus:ring-emerald-500/20 transition-all";
+
 export default function SubmitPage() {
   const [text, setText] = useState("");
   const [source, setSource] = useState("survey");
@@ -20,7 +24,7 @@ export default function SubmitPage() {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSubmitting(true);
     setError(null);
@@ -39,19 +43,30 @@ export default function SubmitPage() {
   }
 
   return (
-    <div className="p-6 md:p-8 max-w-xl flex flex-col gap-6">
-      <div>
-        <h1 className="text-xl md:text-2xl font-semibold text-neutral-900 dark:text-neutral-100">
+    <div className="p-6 md:p-8 max-w-xl flex flex-col gap-8">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
           Submit Feedback
         </h1>
-        <p className="text-sm text-neutral-600 dark:text-neutral-300 mt-1">
+        <p className="text-sm text-neutral-500 mt-1.5">
           Add new user feedback to the pipeline
         </p>
-      </div>
+      </motion.div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <motion.form
+        onSubmit={handleSubmit}
+        className="glass-card p-6 flex flex-col gap-5"
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+      >
         <div>
-          <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+          <label className="block text-xs font-medium text-neutral-400 uppercase tracking-wider mb-2">
             Your Name
           </label>
           <input
@@ -59,22 +74,22 @@ export default function SubmitPage() {
             required
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
-            className="w-full rounded-md border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+            className={inputStyles}
             placeholder="e.g. Takuma K."
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+          <label className="block text-xs font-medium text-neutral-400 uppercase tracking-wider mb-2">
             Source
           </label>
           <select
             value={source}
             onChange={(e) => setSource(e.target.value)}
-            className="w-full rounded-md border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+            className={inputStyles}
           >
             {sources.map((s) => (
-              <option key={s.value} value={s.value}>
+              <option key={s.value} value={s.value} className="bg-[var(--surface-1)]">
                 {s.label}
               </option>
             ))}
@@ -82,39 +97,47 @@ export default function SubmitPage() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+          <label className="block text-xs font-medium text-neutral-400 uppercase tracking-wider mb-2">
             Feedback
           </label>
           <textarea
             required
-            rows={4}
+            rows={5}
             value={text}
             onChange={(e) => setText(e.target.value)}
-            className="w-full rounded-md border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 px-3 py-2 text-sm text-neutral-900 dark:text-neutral-100 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-400 resize-none"
+            className={`${inputStyles} resize-none`}
             placeholder="Describe the issue or feedback..."
           />
         </div>
 
         {error && (
-          <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
+          <p className="text-sm text-red-400">{error}</p>
         )}
 
         {success && (
-          <div className="flex items-center gap-2 text-sm text-emerald-600 dark:text-emerald-400">
+          <motion.div
+            initial={{ opacity: 0, y: 4 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex items-center gap-2.5 text-sm text-emerald-400 bg-emerald-500/10 rounded-xl px-4 py-3"
+          >
             <CheckCircle2 className="h-4 w-4" />
             Feedback submitted successfully.
-          </div>
+          </motion.div>
         )}
 
         <button
           type="submit"
           disabled={submitting}
-          className="inline-flex items-center justify-center gap-2 rounded-md bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900 px-4 py-2.5 text-sm font-medium disabled:opacity-50 transition-colors hover:bg-neutral-800 dark:hover:bg-neutral-200"
+          className="inline-flex items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-sky-500 text-white px-5 py-3 text-sm font-semibold disabled:opacity-40 transition-all hover:shadow-lg hover:shadow-emerald-500/20 active:scale-[0.98]"
         >
-          {submitting && <Loader2 className="h-4 w-4 animate-spin" />}
+          {submitting ? (
+            <Loader2 className="h-4 w-4 animate-spin" />
+          ) : (
+            <Send className="h-4 w-4" />
+          )}
           Submit Feedback
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 }

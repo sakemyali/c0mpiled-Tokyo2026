@@ -1,14 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-hover: rgba(255, 255, 255, 0.06);
+    --accent-emerald: #34d399;
+    --accent-sky: #38bdf8;
+    --surface-0: #0a0a0a;
+    --surface-1: #111111;
+    --surface-2: #1a1a1a;
+  }
+
+  * {
+    border-color: var(--glass-border);
+  }
+
   body {
-    @apply bg-white text-neutral-900 antialiased;
+    @apply bg-[var(--surface-0)] text-neutral-100 antialiased;
+    font-family: 'Outfit', system-ui, sans-serif;
   }
 }
 
 @layer utilities {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .glass-hover:hover {
+    background: var(--glass-hover);
+  }
+
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    transition: all 0.2s ease;
+  }
+
+  .glass-card:hover {
+    background: var(--glass-hover);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .glass-card-solid {
+    background: var(--surface-2);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    transition: all 0.2s ease;
+  }
+
+  .glass-card-solid:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-emerald-400 to-sky-400 bg-clip-text text-transparent;
+  }
+
+  .glow-emerald {
+    box-shadow: 0 0 20px -5px rgba(52, 211, 153, 0.15);
+  }
+
+  .glow-sky {
+    box-shadow: 0 0 20px -5px rgba(56, 189, 248, 0.15);
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
   @keyframes feedbackStream {
     0% {
       transform: translateY(0);
@@ -20,5 +90,25 @@
 
   .animate-feedback-stream {
     animation: feedbackStream 38s linear infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.04), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
   }
 }

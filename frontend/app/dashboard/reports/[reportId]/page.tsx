@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   AlertTriangle,
   ListChecks,
@@ -13,14 +14,19 @@ import {
   TrendingDown,
   Minus,
   ArrowLeft,
+  Hash,
+  Copy,
+  Layers,
+  Clock,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { fetchGroup, type GroupDetail } from "@/lib/api";
 
-const severityColor: Record<string, string> = {
-  critical: "bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300",
-  high: "bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300",
-  medium: "bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300",
-  low: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-300",
+const severityConfig: Record<string, { bg: string; text: string; dot: string }> = {
+  critical: { bg: "bg-red-500/10", text: "text-red-400", dot: "bg-red-400" },
+  high: { bg: "bg-orange-500/10", text: "text-orange-400", dot: "bg-orange-400" },
+  medium: { bg: "bg-yellow-500/10", text: "text-yellow-400", dot: "bg-yellow-400" },
+  low: { bg: "bg-emerald-500/10", text: "text-emerald-400", dot: "bg-emerald-400" },
 };
 
 const trendIcon = {
@@ -39,6 +45,15 @@ function timeAgo(dateStr: string): string {
   return `${days}d ago`;
 }
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 16 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.08, duration: 0.5, ease: "easeOut" as const },
+  }),
+};
+
 export default function ReportDetailPage() {
   const { reportId } = useParams<{ reportId: string }>();
   const [group, setGroup] = useState<GroupDetail | null>(null);
@@ -56,7 +71,7 @@ export default function ReportDetailPage() {
   if (loading) {
     return (
       <div className="flex items-center justify-center py-32">
-        <Loader2 className="h-8 w-8 animate-spin text-neutral-400" />
+        <Loader2 className="h-6 w-6 animate-spin text-neutral-600" />
       </div>
     );
   }
@@ -64,15 +79,13 @@ export default function ReportDetailPage() {
   if (error || !group) {
     return (
       <div className="p-6">
-        <h1 className="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+        <h1 className="text-xl font-semibold text-white mb-3">
           {error ? "Failed to load report" : "Report not found"}
         </h1>
-        {error && (
-          <p className="text-sm text-red-600 dark:text-red-400 mb-3">{error}</p>
-        )}
+        {error && <p className="text-sm text-red-400 mb-3">{error}</p>}
         <Link
           href="/dashboard"
-          className="text-sm underline text-neutral-700 dark:text-neutral-200"
+          className="text-sm text-neutral-400 hover:text-white transition-colors underline underline-offset-4"
         >
           Back to reports
         </Link>
@@ -81,179 +94,232 @@ export default function ReportDetailPage() {
   }
 
   const TrendIcon = trendIcon[group.trendDirection] ?? Minus;
+  const severity = severityConfig[group.severity] ?? severityConfig.medium;
 
   return (
     <>
       {/* Header */}
-      <header className="border-b border-neutral-200 dark:border-neutral-700 px-5 py-4 md:px-7 md:py-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-        <div className="space-y-1">
-          <Link
-            href="/dashboard"
-            className="inline-flex items-center gap-1.5 text-xs text-neutral-500 dark:text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors mb-1"
-          >
-            <ArrowLeft className="h-3 w-3" />
-            Back to Reports
-          </Link>
-          <div className="flex items-center gap-2">
+      <header className="border-b border-white/[0.06] px-6 py-5 md:px-8 md:py-6">
+        <Link
+          href="/dashboard"
+          className="inline-flex items-center gap-1.5 text-xs text-neutral-500 hover:text-white transition-colors mb-4"
+        >
+          <ArrowLeft className="h-3 w-3" />
+          Back to Reports
+        </Link>
+
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-3">
             <span
-              className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold tracking-wide uppercase ${severityColor[group.severity] ?? ""}`}
+              className={cn(
+                "inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-semibold tracking-wider uppercase",
+                severity.bg,
+                severity.text
+              )}
             >
+              <span className={cn("h-1 w-1 rounded-full", severity.dot)} />
               {group.severity}
             </span>
-            <span className="inline-flex items-center gap-1 text-xs text-neutral-500 dark:text-neutral-400">
+            <span className="inline-flex items-center gap-1.5 text-xs text-neutral-500">
               <TrendIcon className="h-3 w-3" />
               {group.trendDirection}
             </span>
           </div>
-          <h1 className="text-2xl md:text-3xl font-semibold text-neutral-900 dark:text-neutral-100">
+          <h1 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
             {group.title}
           </h1>
-          <p className="text-sm md:text-[15px] text-neutral-500 dark:text-neutral-400">
-            {group.entryCount} reports &middot; {group.duplicateCount} duplicates
-            &middot; {group.categories.join(", ")}
+          <p className="text-sm text-neutral-500">
+            <span className="font-mono">{group.entryCount}</span> reports &middot;{" "}
+            <span className="font-mono">{group.duplicateCount}</span> duplicates &middot;{" "}
+            {group.categories.join(", ")}
           </p>
         </div>
       </header>
 
       {/* Content grid */}
-      <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 p-4 md:p-6">
-        {/* Left - AI Summary + Feedback */}
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 p-5 md:p-7">
+        {/* Left Column */}
         <section className="space-y-4">
-          <div className="rounded-lg border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800/70 p-4 space-y-3">
-            <h2 className="text-base md:text-lg font-bold text-neutral-900 dark:text-neutral-100 inline-flex items-center gap-2">
-              <Sparkles className="h-4 w-4 text-neutral-600 dark:text-neutral-300" />
+          <motion.div
+            custom={0}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="glass-card p-5 space-y-4"
+          >
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider inline-flex items-center gap-2">
+              <Sparkles className="h-4 w-4 text-emerald-400" />
               AI Summary
             </h2>
-            <p className="text-sm md:text-[15px] text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            <p className="text-sm text-neutral-400 leading-relaxed">
               {group.aiSummary.problem}
             </p>
-            <div className="grid grid-cols-2 gap-2 text-xs md:text-sm">
-              <div className="rounded-md bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 px-3 py-2">
-                <p className="text-neutral-500 dark:text-neutral-400">Last reported</p>
-                <p className="font-medium text-neutral-800 dark:text-neutral-200">
+            <div className="grid grid-cols-2 gap-2">
+              <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] px-3 py-2.5">
+                <div className="flex items-center gap-1.5 text-neutral-600 mb-1">
+                  <Clock className="h-3 w-3" />
+                  <p className="text-[10px] uppercase tracking-wider">Last reported</p>
+                </div>
+                <p className="text-sm font-medium text-white font-mono">
                   {timeAgo(group.lastReported)}
                 </p>
               </div>
-              <div className="rounded-md bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 px-3 py-2">
-                <p className="text-neutral-500 dark:text-neutral-400">First reported</p>
-                <p className="font-medium text-neutral-800 dark:text-neutral-200">
+              <div className="rounded-xl bg-white/[0.03] border border-white/[0.06] px-3 py-2.5">
+                <div className="flex items-center gap-1.5 text-neutral-600 mb-1">
+                  <Clock className="h-3 w-3" />
+                  <p className="text-[10px] uppercase tracking-wider">First reported</p>
+                </div>
+                <p className="text-sm font-medium text-white font-mono">
                   {timeAgo(group.firstReported)}
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="rounded-lg border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800/70 p-4">
-            <h2 className="text-base md:text-lg font-bold text-neutral-900 dark:text-neutral-100 mb-3 inline-flex items-center gap-2">
-              <MessageSquareQuote className="h-4 w-4 text-neutral-600 dark:text-neutral-300" />
+          <motion.div
+            custom={1}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="glass-card p-5"
+          >
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-4 inline-flex items-center gap-2">
+              <MessageSquareQuote className="h-4 w-4 text-neutral-500" />
               User Feedback ({group.entries.length})
             </h2>
-            <div className="max-h-[440px] overflow-y-auto pr-1">
-              <ul className="space-y-2">
-                {group.entries.map((entry) => (
-                  <li
-                    key={entry.id}
-                    className="rounded-md bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 px-3 py-3"
-                  >
-                    <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                      {entry.text}
-                    </p>
-                    <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-2">
-                      by {entry.userName} &middot; {entry.source} &middot;{" "}
-                      {timeAgo(entry.submittedAt)}
-                    </p>
-                  </li>
-                ))}
-              </ul>
+            <div className="max-h-[420px] overflow-y-auto pr-1 space-y-2">
+              {group.entries.map((entry) => (
+                <div
+                  key={entry.id}
+                  className="rounded-xl bg-white/[0.02] border border-white/[0.06] px-4 py-3 hover:bg-white/[0.04] transition-colors"
+                >
+                  <p className="text-sm text-neutral-300 leading-relaxed">
+                    {entry.text}
+                  </p>
+                  <p className="text-[11px] text-neutral-600 mt-2 font-mono">
+                    {entry.userName} &middot; {entry.source} &middot; {timeAgo(entry.submittedAt)}
+                  </p>
+                </div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </section>
 
-        {/* Middle - Reproduction Steps + Impact */}
+        {/* Middle Column */}
         <section className="space-y-4">
-          <div className="rounded-lg border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800/70 p-4">
-            <h2 className="text-base md:text-lg font-bold text-neutral-900 dark:text-neutral-100 mb-3 inline-flex items-center gap-2">
-              <ListChecks className="h-4 w-4 text-neutral-600 dark:text-neutral-300" />
+          <motion.div
+            custom={2}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="glass-card p-5"
+          >
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-4 inline-flex items-center gap-2">
+              <ListChecks className="h-4 w-4 text-neutral-500" />
               Reproduction Steps
             </h2>
-            <ul className="space-y-2">
+            <div className="space-y-2">
               {group.aiSummary.reproductionSteps.map((step, index) => (
-                <li
+                <div
                   key={index}
-                  className="rounded-md bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-700 px-3 py-2"
+                  className="rounded-xl bg-white/[0.02] border border-white/[0.06] px-4 py-3 flex gap-3"
                 >
-                  <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-1">
-                    Step {index + 1}
-                  </p>
-                  <p className="text-sm text-neutral-800 dark:text-neutral-200">{step}</p>
-                </li>
+                  <span className="font-mono text-xs text-emerald-400/60 font-semibold mt-0.5 flex-shrink-0">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <p className="text-sm text-neutral-300">{step}</p>
+                </div>
               ))}
-            </ul>
-          </div>
+            </div>
+          </motion.div>
 
-          <div className="rounded-lg border border-blue-200 dark:border-blue-900/40 bg-blue-50 dark:bg-blue-950/20 p-4">
-            <h2 className="text-base md:text-lg font-bold text-neutral-900 dark:text-neutral-100 mb-3 pb-2 border-b border-blue-200/80 dark:border-blue-900/40 inline-flex items-center gap-2 w-full">
-              <AlertTriangle className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+          <motion.div
+            custom={3}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="glass-card p-5 border-sky-500/20 glow-sky"
+          >
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-3 pb-3 border-b border-white/[0.06] inline-flex items-center gap-2 w-full">
+              <AlertTriangle className="h-4 w-4 text-sky-400" />
               Impact Assessment
             </h2>
-            <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            <p className="text-sm text-neutral-300 leading-relaxed">
               {group.aiSummary.impact}
             </p>
-          </div>
+          </motion.div>
         </section>
 
-        {/* Right - AI Suggestion + Stats */}
+        {/* Right Column */}
         <section className="space-y-4">
-          <div className="rounded-lg border border-emerald-200 dark:border-emerald-900/40 bg-emerald-50 dark:bg-emerald-950/20 p-4">
-            <h2 className="text-base md:text-lg font-bold text-neutral-900 dark:text-neutral-100 mb-3 pb-2 border-b border-emerald-200/80 dark:border-emerald-900/40 inline-flex items-center gap-2 w-full">
-              <Sparkles className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
+          <motion.div
+            custom={4}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="glass-card p-5 border-emerald-500/20 glow-emerald"
+          >
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-3 pb-3 border-b border-white/[0.06] inline-flex items-center gap-2 w-full">
+              <Sparkles className="h-4 w-4 text-emerald-400" />
               AI Suggestion
             </h2>
-            <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
+            <p className="text-sm text-neutral-300 leading-relaxed">
               {group.aiSummary.suggestion}
             </p>
-          </div>
+          </motion.div>
 
-          <div className="rounded-lg border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800/70 p-4 space-y-3">
-            <h2 className="text-base md:text-lg font-bold text-neutral-900 dark:text-neutral-100">
+          <motion.div
+            custom={5}
+            initial="hidden"
+            animate="visible"
+            variants={fadeUp}
+            className="glass-card p-5"
+          >
+            <h2 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
               Quick Stats
             </h2>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-neutral-500 dark:text-neutral-400">Total reports</span>
-                <span className="font-medium text-neutral-800 dark:text-neutral-200">
-                  {group.entryCount}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-neutral-500 dark:text-neutral-400">Duplicates</span>
-                <span className="font-medium text-neutral-800 dark:text-neutral-200">
-                  {group.duplicateCount}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-neutral-500 dark:text-neutral-400">Severity</span>
-                <span
-                  className={`inline-flex items-center rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${severityColor[group.severity] ?? ""}`}
-                >
-                  {group.severity}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-neutral-500 dark:text-neutral-400">Trend</span>
-                <span className="inline-flex items-center gap-1 font-medium text-neutral-800 dark:text-neutral-200">
-                  <TrendIcon className="h-3 w-3" />
-                  {group.trendDirection}
-                </span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-neutral-500 dark:text-neutral-400">Categories</span>
-                <span className="font-medium text-neutral-800 dark:text-neutral-200">
-                  {group.categories.join(", ")}
-                </span>
-              </div>
+            <div className="space-y-3">
+              {[
+                { label: "Total reports", value: String(group.entryCount), icon: Hash },
+                { label: "Duplicates", value: String(group.duplicateCount), icon: Copy },
+                {
+                  label: "Severity",
+                  value: group.severity,
+                  icon: AlertTriangle,
+                  badge: true,
+                },
+                {
+                  label: "Trend",
+                  value: group.trendDirection,
+                  icon: TrendIcon,
+                },
+                { label: "Categories", value: group.categories.join(", "), icon: Layers },
+              ].map((stat) => (
+                <div key={stat.label} className="flex items-center justify-between">
+                  <div className="flex items-center gap-2.5">
+                    <stat.icon className="h-3.5 w-3.5 text-neutral-600" />
+                    <span className="text-xs text-neutral-500">{stat.label}</span>
+                  </div>
+                  {stat.badge ? (
+                    <span
+                      className={cn(
+                        "inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider",
+                        severity.bg,
+                        severity.text
+                      )}
+                    >
+                      <span className={cn("h-1 w-1 rounded-full", severity.dot)} />
+                      {stat.value}
+                    </span>
+                  ) : (
+                    <span className="text-sm font-medium text-white font-mono capitalize">
+                      {stat.value}
+                    </span>
+                  )}
+                </div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </section>
       </div>
     </>

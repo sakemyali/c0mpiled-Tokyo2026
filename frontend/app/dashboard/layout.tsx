@@ -6,31 +6,29 @@ import {
   LayoutDashboard,
   BarChart3,
   PlusCircle,
-  LogOut,
+  ArrowLeft,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
-import logoImage from "@/image.png";
 import userImage from "@/image_user.png";
 
 const navLinks = [
   {
     label: "Reports",
     href: "/dashboard",
-    icon: <LayoutDashboard className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+    icon: <LayoutDashboard className="h-[18px] w-[18px] flex-shrink-0" />,
   },
   {
     label: "Analytics",
     href: "/dashboard/analytics",
-    icon: <BarChart3 className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+    icon: <BarChart3 className="h-[18px] w-[18px] flex-shrink-0" />,
   },
   {
     label: "Submit",
     href: "/dashboard/submit",
-    icon: <PlusCircle className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+    icon: <PlusCircle className="h-[18px] w-[18px] flex-shrink-0" />,
   },
 ];
 
@@ -43,57 +41,52 @@ export default function DashboardLayout({
   const pathname = usePathname();
 
   return (
-    <div className="min-h-screen p-2 md:p-3 bg-neutral-50 dark:bg-neutral-950">
-      <div
-        className={cn(
-          "rounded-md flex flex-col md:flex-row bg-gray-100 dark:bg-neutral-800 w-full border border-neutral-200 dark:border-neutral-700 overflow-hidden min-h-[calc(100vh-1rem)] md:min-h-[calc(100vh-1.5rem)]",
-        )}
-      >
+    <div className="min-h-screen bg-[var(--surface-0)]">
+      <div className="flex flex-col md:flex-row w-full min-h-screen">
         <Sidebar open={open} setOpen={setOpen}>
-          <SidebarBody className="justify-between gap-10">
+          <SidebarBody className="justify-between gap-10 border-r border-white/[0.06]">
             <div className="flex flex-col flex-1 overflow-y-auto overflow-x-hidden">
               {open ? <Logo /> : <LogoIcon />}
-              <div className="mt-8 flex flex-col gap-2">
+              <div className="mt-8 flex flex-col gap-1">
                 {navLinks.map((link) => (
                   <SidebarLink
                     key={link.href}
                     link={link}
-                    className={cn(
-                      pathname === link.href &&
-                        "bg-neutral-200 dark:bg-neutral-700 rounded-md"
-                    )}
+                    active={pathname === link.href}
                   />
                 ))}
               </div>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               <SidebarLink
                 link={{
                   label: "Back to Home",
                   href: "/",
-                  icon: <LogOut className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />,
+                  icon: <ArrowLeft className="h-[18px] w-[18px] flex-shrink-0" />,
                 }}
               />
-              <SidebarLink
-                link={{
-                  label: "Takuma Kono",
-                  href: "#",
-                  icon: (
-                    <Image
-                      src={userImage}
-                      className="h-7 w-7 flex-shrink-0 rounded-full"
-                      width={50}
-                      height={50}
-                      alt="Avatar"
-                    />
-                  ),
-                }}
-              />
+              <div className="mt-2 pt-3 border-t border-white/[0.06]">
+                <SidebarLink
+                  link={{
+                    label: "Takuma Kono",
+                    href: "#",
+                    icon: (
+                      <Image
+                        src={userImage}
+                        className="h-7 w-7 flex-shrink-0 rounded-full ring-2 ring-white/10"
+                        width={50}
+                        height={50}
+                        alt="Avatar"
+                      />
+                    ),
+                  }}
+                />
+              </div>
             </div>
           </SidebarBody>
         </Sidebar>
-        <div className="flex flex-1 p-0">
-          <div className="rounded-tl-2xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 flex flex-col flex-1 w-full h-full overflow-y-auto">
+        <div className="flex flex-1">
+          <div className="flex flex-col flex-1 w-full h-full min-h-screen overflow-y-auto">
             {children}
           </div>
         </div>
@@ -105,17 +98,15 @@ export default function DashboardLayout({
 const Logo = () => (
   <Link
     href="/dashboard"
-    className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
+    className="flex items-center gap-2.5 py-1 relative z-20"
   >
-    <Image
-      src={logoImage}
-      alt="Maisen logo"
-      className="h-4 w-5 rounded-sm object-contain flex-shrink-0"
-    />
+    <div className="h-6 w-6 rounded-lg bg-gradient-to-br from-emerald-400 to-sky-400 flex items-center justify-center flex-shrink-0">
+      <span className="text-[11px] font-extrabold text-[var(--surface-0)] leading-none">M</span>
+    </div>
     <motion.span
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="font-medium text-black dark:text-white whitespace-pre"
+      className="font-semibold text-white whitespace-pre tracking-tight text-sm"
     >
       Maisen
     </motion.span>
@@ -125,12 +116,10 @@ const Logo = () => (
 const LogoIcon = () => (
   <Link
     href="/dashboard"
-    className="font-normal flex space-x-2 items-center text-sm text-black py-1 relative z-20"
+    className="flex items-center py-1 relative z-20"
   >
-    <Image
-      src={logoImage}
-      alt="Maisen logo"
-      className="h-4 w-5 rounded-sm object-contain flex-shrink-0"
-    />
+    <div className="h-6 w-6 rounded-lg bg-gradient-to-br from-emerald-400 to-sky-400 flex items-center justify-center flex-shrink-0">
+      <span className="text-[11px] font-extrabold text-[var(--surface-0)] leading-none">M</span>
+    </div>
   </Link>
 );
