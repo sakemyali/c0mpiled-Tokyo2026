@@ -31,9 +31,9 @@ Requirements for hackathon demo. Each maps to roadmap phases.
 
 ### Detail View
 
-- [ ] **DETL-01**: User can click into a group to see full AI summary, reproduction steps, and improvement suggestion
-- [ ] **DETL-02**: Detail view lists all raw feedback entries belonging to the group
-- [ ] **DETL-03**: Detail view shows screenshots alongside feedback entries
+- [x] **DETL-01**: User can click into a group to see full AI summary, reproduction steps, and improvement suggestion
+- [x] **DETL-02**: Detail view lists all raw feedback entries belonging to the group
+- [x] **DETL-03**: Detail view shows screenshots alongside feedback entries
 - [ ] **DETL-04**: Detail view includes rrweb session replay for entries with session data
 - [ ] **DETL-05**: Detail view falls back to annotated screenshot display when replay is unavailable
 
@@ -90,9 +90,9 @@ Deferred to post-hackathon.
 | DASH-02 | Phase 1 | Complete |
 | DASH-03 | Phase 3 | Pending |
 | DASH-04 | Phase 1 | Complete |
-| DETL-01 | Phase 1 | Pending |
-| DETL-02 | Phase 1 | Pending |
-| DETL-03 | Phase 1 | Pending |
+| DETL-01 | Phase 1 | Complete |
+| DETL-02 | Phase 1 | Complete |
+| DETL-03 | Phase 1 | Complete |
 | DETL-04 | Phase 3 | Pending |
 | DETL-05 | Phase 3 | Pending |
 | UI-01 | Phase 1 | Complete |
