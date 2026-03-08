@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UX Feedback Compiler | Turn Chaos into Clarity</title>
+<meta content="Automatically group and prioritize thousands of user feedback items into actionable UX insights." name="description"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Inter Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            'brand-black': '#000000',
+            'brand-gray-light': '#F9FAFB',
+            'brand-gray-mid': '#E5E7EB',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="base-layout">
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      scroll-behavior: smooth;
+    }
+    
+    /* Animation transition for the hero chaos-to-clarity */
+    .chaos-element {
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    .reveal-on-scroll.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="font-sans antialiased overflow-x-hidden">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-brand-gray-mid">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<div class="font-bold text-xl tracking-tighter">UX COMPILER.</div>
+<div class="hidden md:flex space-x-8 text-sm font-medium">
+<a class="hover:text-gray-500 transition-colors" href="#features">Features</a>
+<a class="hover:text-gray-500 transition-colors" href="#how-it-works">How it Works</a>
+<a class="hover:text-gray-500 transition-colors" href="#testimonials">Case Studies</a>
+</div>
+<div>
+<div class="flex items-center space-x-6">
+<a class="text-sm font-medium hover:text-gray-500 transition-colors" href="#">Log in</a>
+<a class="hidden sm:inline-block border border-brand-gray-mid text-brand-black px-5 py-2 text-sm font-semibold hover:bg-gray-50 transition-all" data-open-app-link="" href="http://localhost:5174/">Open App</a>
+<a class="bg-brand-black text-white px-5 py-2 text-sm font-semibold hover:bg-gray-800 transition-all" href="#">Get Early Access</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero & Chaos Animation Section -->
+<main class="pt-32 pb-20 overflow-hidden">
+<div class="max-w-4xl mx-auto text-center px-6">
+<h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+        Turn Feedback Chaos <br/>into Product Clarity.
+      </h1>
+<p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+        Automatically group, prioritize, and summarize thousands of user feedback items into actionable UX issues for small teams.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
+<button class="bg-brand-black text-white px-8 py-4 text-lg font-semibold w-full sm:w-auto">Get Early Access</button>
+<button class="border border-brand-gray-mid text-brand-black px-8 py-4 text-lg font-semibold w-full sm:w-auto hover:bg-gray-50">View Demo</button>
+</div>
+</div>
+<!-- Chaos to Clarity Interaction Container -->
+<div class="relative max-w-5xl mx-auto h-[500px] border border-brand-gray-mid bg-brand-gray-light/30 rounded-lg overflow-hidden flex items-center justify-center p-12 shadow-sm" id="interactive-hero">
+<!-- These are the "Chaos" bits that will align on scroll -->
+<div class="relative w-full h-full" id="chaos-container">
+<!-- Background Dots -->
+<div class="absolute top-10 left-10 w-2 h-2 bg-black rounded-full chaos-element opacity-20"></div>
+<div class="absolute bottom-20 right-10 w-3 h-3 bg-black rounded-full chaos-element opacity-10"></div>
+<div class="absolute top-1/2 left-1/4 w-2 h-2 bg-black rounded-full chaos-element opacity-25"></div>
+<!-- Feedback Bubbles -->
+<div class="chaos-element absolute top-[10%] left-[5%] bg-white border border-gray-200 p-3 shadow-sm max-w-[200px] text-xs transform -rotate-6" data-id="fb-1">
+          "The checkout button is sometimes hard to find on mobile Safari."
+        </div>
+<div class="chaos-element absolute top-[40%] right-[5%] bg-white border border-gray-200 p-3 shadow-sm max-w-[180px] text-xs transform rotate-3" data-id="fb-2">
+          "I wish there was a dark mode toggle in the settings menu."
+        </div>
+<div class="chaos-element absolute bottom-[15%] left-[20%] bg-white border border-gray-200 p-3 shadow-sm max-w-[220px] text-xs transform rotate-12" data-id="fb-3">
+          "Upload speed is extremely slow for large CSV files."
+        </div>
+<div class="chaos-element absolute top-[60%] left-[45%] bg-white border border-gray-200 p-3 shadow-sm max-w-[150px] text-xs transform -rotate-3" data-id="fb-4">
+          "Mobile layout is broken on the pricing page."
+        </div>
+<div class="chaos-element absolute bottom-[30%] right-[25%] bg-white border border-gray-200 p-3 shadow-sm max-w-[200px] text-xs transform rotate-6" data-id="fb-5">
+          "Can we get a Zapier integration for new feedback?"
+        </div>
+<!-- The "Clarity" Result (Hidden initially by opacity/scale) -->
+<div class="opacity-0 scale-95 transition-all duration-700 w-full h-full flex items-center justify-center" id="clarity-table">
+<div class="bg-white border border-black w-full max-w-2xl p-6 shadow-2xl">
+<div class="flex justify-between items-center mb-4 border-b pb-2 border-gray-100">
+<span class="text-xs font-bold uppercase tracking-widest">Active Issues (3)</span>
+<span class="text-xs text-gray-400">Auto-generated 2m ago</span>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="text-sm font-medium">1. Mobile Accessibility - Checkout</div>
+<div class="px-2 py-1 bg-black text-white text-[10px] font-bold">HIGH PRIORITY</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="text-sm font-medium">2. Infrastructure - CSV Upload Speeds</div>
+<div class="px-2 py-1 bg-gray-200 text-black text-[10px] font-bold">MEDIUM</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="text-sm font-medium">3. Feature Request - Dark Mode Support</div>
+<div class="px-2 py-1 bg-gray-100 text-gray-400 text-[10px] font-bold">BACKLOG</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- END: Hero & Chaos Animation Section -->
+<!-- BEGIN: Trusted By -->
+<section class="py-12 border-y border-brand-gray-mid">
+<div class="max-w-7xl mx-auto px-6">
+<p class="text-center text-[10px] uppercase tracking-widest font-bold text-gray-400 mb-8">Trusted by product teams at</p>
+<div class="flex flex-wrap justify-center items-center gap-12 grayscale opacity-40">
+<span class="text-xl font-bold">DATAFLOW</span>
+<span class="text-xl font-bold">METRIC</span>
+<span class="text-xl font-bold">PRISM.UI</span>
+<span class="text-xl font-bold">VELOCITY</span>
+<span class="text-xl font-bold">ZENITH</span>
+</div>
+</div>
+</section>
+<!-- END: Trusted By -->
+<!-- BEGIN: How It Works -->
+<section class="py-32 bg-white" id="how-it-works">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-3 gap-16">
+<!-- Step 1 -->
+<div class="reveal-on-scroll">
+<div class="w-12 h-12 bg-black text-white flex items-center justify-center font-bold mb-6">01</div>
+<h3 class="text-2xl font-bold mb-4">Ingest</h3>
+<p class="text-gray-600 leading-relaxed">
+            Connect your Intercom, Zendesk, or Slack channels. We pull in every raw message, ticket, and comment automatically.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="w-12 h-12 bg-black text-white flex items-center justify-center font-bold mb-6">02</div>
+<h3 class="text-2xl font-bold mb-4">AI Group</h3>
+<p class="text-gray-600 leading-relaxed">
+            Our LLM-powered engine identifies patterns and groups disparate comments into unified "UX Issues" based on intent and sentiment.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="reveal-on-scroll" style="transition-delay: 400ms;">
+<div class="w-12 h-12 bg-black text-white flex items-center justify-center font-bold mb-6">03</div>
+<h3 class="text-2xl font-bold mb-4">Act</h3>
+<p class="text-gray-600 leading-relaxed">
+            Prioritize issues based on frequency and business impact. Export directly to Linear or Jira as formatted tickets.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: How It Works -->
+<!-- BEGIN: Features Detail -->
+<section class="py-32 bg-brand-gray-light" id="features">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2">
+<span class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4 block">Product Intelligence</span>
+<h2 class="text-4xl font-bold mb-6 leading-tight">Quantify the Qualitative.</h2>
+<p class="text-gray-600 text-lg mb-8">
+            Stop guessing what users want. UX Compiler maps every piece of feedback to a specific area of your product, giving you a heat-map of frustration.
+          </p>
+<ul class="space-y-4">
+<li class="flex items-start">
+<span class="mr-3 mt-1">●</span>
+<span>Semantic clustering (no manual tagging)</span>
+</li>
+<li class="flex items-start">
+<span class="mr-3 mt-1">●</span>
+<span>Trend detection for emerging bugs</span>
+</li>
+<li class="flex items-start">
+<span class="mr-3 mt-1">●</span>
+<span>Automated executive summaries</span>
+</li>
+</ul>
+</div>
+<div class="w-full md:w-1/2 bg-white p-8 border border-brand-gray-mid shadow-sm">
+<!-- Placeholder for feature graphic -->
+<div class="aspect-video bg-gray-50 flex items-center justify-center border border-dashed border-gray-300">
+<div class="text-center">
+<div class="text-3xl font-bold mb-2">92%</div>
+<p class="text-xs text-gray-500 uppercase">Efficiency gain reported by teams</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Features Detail -->
+<!-- BEGIN: Final CTA -->
+<section class="py-40 bg-white">
+<div class="max-w-3xl mx-auto text-center px-6">
+<h2 class="text-4xl font-bold mb-8">Ready to clear the noise?</h2>
+<p class="text-xl text-gray-600 mb-12">Join 500+ product teams using UX Compiler to build better products, faster.</p>
+<div class="bg-black text-white p-1 flex items-center max-w-md mx-auto">
+<input class="flex-grow bg-transparent border-none focus:ring-0 text-white placeholder-gray-500 py-3 px-4" placeholder="Enter your work email" type="email"/>
+<button class="bg-white text-black px-6 py-3 font-bold hover:bg-gray-200 transition-colors">Start Free</button>
+</div>
+</div>
+</section>
+<!-- END: Final CTA -->
+<!-- BEGIN: Footer -->
+<footer class="py-12 border-t border-brand-gray-mid bg-white">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="font-bold tracking-tighter">UX COMPILER.</div>
+<div class="flex space-x-8 text-xs font-medium text-gray-400">
+<a class="hover:text-black transition-colors uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="hover:text-black transition-colors uppercase tracking-widest" href="#">Terms of Service</a>
+<a class="hover:text-black transition-colors uppercase tracking-widest" href="#">Twitter</a>
+</div>
+<div class="text-[10px] text-gray-400 uppercase tracking-widest">
+        © 2024 UX Compiler Inc. All rights reserved.
+      </div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Scroll Animation Script -->
+<script data-purpose="scroll-animations">
+    const openAppLinks = document.querySelectorAll('[data-open-app-link]');
+    const appUrl = window.location.protocol === 'file:'
+      ? 'http://localhost:5174/'
+      : `${window.location.protocol}//${window.location.hostname}:5174/`;
+
+    openAppLinks.forEach((link) => {
+      link.href = appUrl;
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      
+      // Hero Animation Logic
+      const heroContainer = document.getElementById('interactive-hero');
+      const chaosElements = document.querySelectorAll('.chaos-element');
+      const clarityTable = document.getElementById('clarity-table');
+      
+      // Calculate progress of scroll relative to hero section (roughly)
+      const scrollProgress = Math.min(scrollY / (windowHeight * 0.6), 1);
+
+      chaosElements.forEach((el, index) => {
+        // Move elements towards center based on progress
+        const targetX = 0;
+        const targetY = 0;
+        
+        // Use opacity to fade out chaos elements as clarity emerges
+        el.style.opacity = (1 - scrollProgress * 1.5);
+        el.style.transform = `scale(${1 - (scrollProgress * 0.5)}) translateY(${scrollProgress * 50}px)`;
+        
+        if (scrollProgress > 0.8) {
+          el.style.visibility = 'hidden';
+        } else {
+          el.style.visibility = 'visible';
+        }
+      });
+
+      // Fade in Clarity Table
+      if (scrollProgress > 0.5) {
+        clarityTable.style.opacity = (scrollProgress - 0.5) * 2;
+        clarityTable.style.transform = `scale(${0.95 + (scrollProgress - 0.5) * 0.1})`;
+      } else {
+        clarityTable.style.opacity = 0;
+      }
+
+      // Intersection Observer alternative for standard reveals
+      const revealItems = document.querySelectorAll('.reveal-on-scroll');
+      revealItems.forEach(item => {
+        const itemTop = item.getBoundingClientRect().top;
+        if (itemTop < windowHeight * 0.85) {
+          item.classList.add('visible');
+        }
+      });
+    });
+
+    // Initialize Intersection Observer for reveals on page load/scroll
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+  </script>
+<!-- END: Scroll Animation Script -->
+</body></html>
