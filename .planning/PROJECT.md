@@ -2,11 +2,11 @@
 
 ## What This Is
 
-An AI-powered dashboard that transforms raw, vague user feedback into structured, actionable UX issues. Small product teams paste or ingest messy feedback (text, screenshots, session replays) and get back grouped issues with AI summaries, reproduction steps, improvement suggestions, and rrweb session replays. Built as a hackathon demo to show the vision: chaos in, clarity out.
+An AI-powered platform that takes the massive, messy pile of feedback and data companies already have — but can't effectively use — and turns it into structured, actionable insights. Companies collect tons of user feedback (vague reports, duplicates, screenshots, session data) but it sits unmanaged and unhelpful. We ingest it all, group it intelligently, and surface clear issues with AI summaries, reproduction steps, improvement suggestions, and session replays. Built as a hackathon demo to show the vision: chaos in, clarity out.
 
 ## Core Value
 
-Turn unstructured user feedback into grouped, reproducible UX issues that a small team can actually act on.
+Companies have too much feedback data that goes to waste. We make all of it useful — grouped, summarized, and actionable.
 
 ## Requirements
 
