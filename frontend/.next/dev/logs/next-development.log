@@ -1,6 +1,6 @@
-[00:00:02.763] Server  LOG     ✓ Ready in 2.5s
-[00:00:08.598] Server  LOG     ○ Compiling / ...
-[00:00:11.874] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:03.704] Server  LOG     ✓ Ready in 3.4s
+[00:00:15.423] Server  LOG     ○ Compiling / ...
+[00:00:19.627] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.

@@ -30,12 +30,12 @@
       "namedRegex": "^/api/groups/(?<nxtPid>[^/]+?)(?:/)?$"
     },
     {
-      "page": "/reports/[reportId]",
-      "regex": "^/reports/([^/]+?)(?:/)?$",
+      "page": "/dashboard/reports/[reportId]",
+      "regex": "^/dashboard/reports/([^/]+?)(?:/)?$",
       "routeKeys": {
         "nxtPreportId": "nxtPreportId"
       },
-      "namedRegex": "^/reports/(?<nxtPreportId>[^/]+?)(?:/)?$"
+      "namedRegex": "^/dashboard/reports/(?<nxtPreportId>[^/]+?)(?:/)?$"
     }
   ],
   "staticRoutes": [
@@ -86,6 +86,24 @@
       "regex": "^/api/groups(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/groups(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/dashboard/analytics",
+      "regex": "^/dashboard/analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/analytics(?:/)?$"
+    },
+    {
+      "page": "/dashboard/submit",
+      "regex": "^/dashboard/submit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard/submit(?:/)?$"
     }
   ],
   "dataRoutes": [],

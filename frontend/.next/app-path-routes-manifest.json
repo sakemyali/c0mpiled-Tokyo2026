@@ -7,6 +7,9 @@
   "/api/entries/route": "/api/entries",
   "/api/groups/[id]/route": "/api/groups/[id]",
   "/api/groups/route": "/api/groups",
-  "/page": "/",
-  "/reports/[reportId]/page": "/reports/[reportId]"
+  "/dashboard/analytics/page": "/dashboard/analytics",
+  "/dashboard/page": "/dashboard",
+  "/dashboard/reports/[reportId]/page": "/dashboard/reports/[reportId]",
+  "/dashboard/submit/page": "/dashboard/submit",
+  "/page": "/"
 }

@@ -1,16 +1,19 @@
-.PHONY: dev install build start clean
+.PHONY: dev install build start lint clean
 
 dev:
-	npm run dev --prefix frontend
+	cd frontend && npm run dev
 
 install:
-	npm install --prefix frontend
+	cd frontend && npm install
 
 build:
-	npm run build --prefix frontend
+	cd frontend && npm run build
 
 start:
-	npm run start --prefix frontend
+	cd frontend && npm run start
+
+lint:
+	cd frontend && npm run lint
 
 clean:
-	rm -rf frontend/.next frontend/node_modules node_modules
+	rm -rf frontend/.next frontend/node_modules
