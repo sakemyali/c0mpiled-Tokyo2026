@@ -1,1 +1,4 @@
 .planning/
+.claude/
+node_modules/
+dist/
