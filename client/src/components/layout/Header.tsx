@@ -10,12 +10,7 @@ import { cn } from "@/lib/utils"
 const navItems = [
   { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
   { label: "Analytics", path: "/analytics", icon: BarChart3 },
-  {
-    label: "Submit Feedback",
-    path: "",
-    icon: MessageSquarePlus,
-    disabled: true,
-  },
+  { label: "Submit Feedback", path: "/submit", icon: MessageSquarePlus },
 ] as const
 
 export function Header() {
@@ -38,22 +33,6 @@ export function Header() {
           {navItems.map((item) => {
             const Icon = item.icon
             const isActive = pathname === item.path
-
-            if (item.disabled) {
-              return (
-                <span
-                  key={item.label}
-                  className="relative flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm text-muted-foreground/50 cursor-not-allowed"
-                  title="Coming in Phase 2"
-                >
-                  <Icon className="h-4 w-4" />
-                  <span>{item.label}</span>
-                  <span className="ml-1 rounded-full bg-muted/50 px-1.5 py-0.5 text-[10px] leading-none">
-                    Soon
-                  </span>
-                </span>
-              )
-            }
 
             return (
               <Link
