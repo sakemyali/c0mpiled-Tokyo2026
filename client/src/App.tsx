@@ -1,15 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router"
-
-function DashboardPage() {
-  return (
-    <div className="container mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-      <p className="mt-2 text-muted-foreground">
-        Feedback groups and analytics will appear here.
-      </p>
-    </div>
-  )
-}
+import { Header } from "@/components/layout/Header"
+import { DashboardPage } from "@/pages/DashboardPage"
 
 function AnalyticsPage() {
   return (
@@ -26,6 +17,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-background">
+        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
