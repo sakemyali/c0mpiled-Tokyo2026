@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UX Feedback Compiler | Turn Chaos into Clarity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b2bee",
+                        "navy": "#0f0d1b",
+                        "slate-custom": "#524c9a",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#121022",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-navy dark:text-slate-100">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">auto_awesome_motion</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-navy dark:text-white">UX Feedback Compiler</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Product</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">How it Works</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Pricing</a>
+<button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold hover:brightness-110 transition-all shadow-lg shadow-primary/20">
+                        Get Early Access
+                    </button>
+</nav>
+<div class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+<div class="lg:col-span-6 text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+<span class="material-symbols-outlined text-sm">bolt</span>
+                            AI-Powered UX Analysis
+                        </div>
+<h1 class="text-5xl md:text-6xl font-black text-navy dark:text-white leading-[1.1] tracking-tight mb-6">
+                            Turn Feedback Chaos into <span class="text-primary">Product Clarity</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-custom dark:text-slate-300 font-normal leading-relaxed mb-10 max-w-xl">
+                            Automatically group, prioritize, and summarize thousands of user feedback items into actionable UX issues for your small team.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="flex items-center justify-center bg-primary text-white h-14 px-8 rounded-xl font-bold text-lg hover:brightness-110 transition-all shadow-xl shadow-primary/30">
+                                Get Early Access
+                            </button>
+<button class="flex items-center justify-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 h-14 px-8 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all">
+                                Watch Demo
+                            </button>
+</div>
+<div class="mt-8 flex items-center gap-4 text-sm font-medium text-slate-custom dark:text-slate-400">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-xs">person</span>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-300 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-xs">person</span>
+</div>
+<div class="w-8 h-8 rounded-full border-2 border-white bg-slate-400 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-xs">person</span>
+</div>
+</div>
+<span>Used by 200+ top engineering teams</span>
+</div>
+</div>
+<!-- Dashboard Preview Visual -->
+<div class="mt-16 lg:mt-0 lg:col-span-6 relative">
+<div class="relative bg-white dark:bg-slate-900 rounded-2xl shadow-2xl border border-slate-200 dark:border-slate-800 p-2 md:p-4 aspect-[4/3] flex gap-4 overflow-hidden">
+<!-- Left Side: Messy Input -->
+<div class="w-1/3 bg-slate-50 dark:bg-slate-800/50 rounded-lg p-3 flex flex-col gap-3">
+<div class="h-4 w-20 bg-slate-200 dark:bg-slate-700 rounded mb-2"></div>
+<div class="p-2 bg-white dark:bg-slate-800 rounded shadow-sm text-[8px] text-slate-400 italic">"The checkout button is hard to find on mobile and sometimes it just crashes..."</div>
+<div class="p-2 bg-white dark:bg-slate-800 rounded shadow-sm text-[8px] text-slate-400 italic">"Why can't I export my data to CSV? This is a dealbreaker for my manager."</div>
+<div class="p-2 bg-white dark:bg-slate-800 rounded shadow-sm text-[8px] text-slate-400 italic">"UI feels cluttered since the last update. Too much white space?"</div>
+<div class="p-2 bg-white dark:bg-slate-800 rounded shadow-sm text-[8px] text-slate-400 italic">"Login loop on Chrome version 114. Urgent fix needed!"</div>
+<div class="p-2 bg-white dark:bg-slate-800 rounded shadow-sm text-[8px] text-slate-400 italic">"The search bar doesn't work for partial strings."</div>
+</div>
+<!-- Arrow / Transition -->
+<div class="flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">keyboard_double_arrow_right</span>
+</div>
+<!-- Right Side: Grouped Cards -->
+<div class="flex-1 space-y-3 p-2">
+<div class="h-4 w-24 bg-slate-200 dark:bg-slate-700 rounded mb-2"></div>
+<div class="p-3 bg-primary/5 border border-primary/20 rounded-lg flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<div class="px-1.5 py-0.5 rounded bg-red-100 text-red-600 text-[10px] font-bold">CRITICAL</div>
+<div class="text-[8px] text-slate-400">14 Mentions</div>
+</div>
+<div class="text-xs font-bold text-navy dark:text-white">Checkout UX &amp; Stability</div>
+<div class="h-1.5 w-full bg-slate-200 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+</div>
+<div class="p-3 bg-slate-50 dark:bg-slate-800 rounded-lg flex flex-col gap-2 border border-slate-100 dark:border-slate-700">
+<div class="flex justify-between items-center">
+<div class="px-1.5 py-0.5 rounded bg-blue-100 text-blue-600 text-[10px] font-bold">FEATURE</div>
+<div class="text-[8px] text-slate-400">8 Mentions</div>
+</div>
+<div class="text-xs font-bold text-navy dark:text-white">Data Portability (CSV Export)</div>
+<div class="h-1.5 w-full bg-slate-200 rounded-full overflow-hidden">
+<div class="h-full bg-slate-400 w-[40%]"></div>
+</div>
+</div>
+<div class="p-3 bg-slate-50 dark:bg-slate-800 rounded-lg flex flex-col gap-2 border border-slate-100 dark:border-slate-700">
+<div class="flex justify-between items-center">
+<div class="px-1.5 py-0.5 rounded bg-orange-100 text-orange-600 text-[10px] font-bold">BUG</div>
+<div class="text-[8px] text-slate-400">5 Mentions</div>
+</div>
+<div class="text-xs font-bold text-navy dark:text-white">Search Indexing Inconsistency</div>
+<div class="h-1.5 w-full bg-slate-200 rounded-full overflow-hidden">
+<div class="h-full bg-slate-400 w-[25%]"></div>
+</div>
+</div>
+</div>
+<!-- Overlay Gradient for Depth -->
+<div class="absolute inset-0 pointer-events-none rounded-2xl ring-1 ring-inset ring-slate-200 dark:ring-slate-700"></div>
+</div>
+<div class="absolute -z-10 -bottom-12 -right-12 w-64 h-64 bg-primary/20 blur-[80px] rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Signal Section -->
+<section class="py-12 bg-white dark:bg-slate-900/50 border-y border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 text-center">
+<div class="flex flex-wrap justify-center items-center gap-12 grayscale opacity-60">
+<div class="flex items-center gap-2 font-black text-xl text-navy dark:text-white">
+<span class="text-orange-600">Y</span> Combinator
+                    </div>
+<div class="text-xl font-bold">TECHCORP</div>
+<div class="text-xl font-bold">Velocity AI</div>
+<div class="text-xl font-bold">Stellar.io</div>
+<div class="text-xl font-bold">Prism Design</div>
+</div>
+<p class="mt-6 text-sm text-slate-custom font-medium uppercase tracking-widest">Trusted by builders at world-class organizations</p>
+</div>
+</section>
+<!-- How it Works Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mb-16">
+<h2 class="text-primary font-bold text-sm tracking-widest uppercase mb-4">The Workflow</h2>
+<h3 class="text-4xl font-black text-navy dark:text-white leading-tight mb-6">From Raw Input to Actionable Insights in Minutes</h3>
+<p class="text-lg text-slate-custom dark:text-slate-300">Our AI-driven engine handles the heavy lifting of qualitative data analysis, allowing your team to focus on building.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="relative group p-8 bg-white dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">upload_file</span>
+</div>
+<h4 class="text-xl font-bold text-navy dark:text-white mb-3">1. Ingest</h4>
+<p class="text-slate-custom dark:text-slate-300 text-sm leading-relaxed">
+                            Upload messy text, CSVs, support tickets, or screenshots. We connect with Zendesk, Intercom, and Slack directly.
+                        </p>
+</div>
+<!-- Step 2 -->
+<div class="relative group p-8 bg-white dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">model_training</span>
+</div>
+<h4 class="text-xl font-bold text-navy dark:text-white mb-3">2. AI Group &amp; Prioritize</h4>
+<p class="text-slate-custom dark:text-slate-300 text-sm leading-relaxed">
+                            Our LLMs automatically categorize thousands of points and rank them by impact, sentiment, and frequency.
+                        </p>
+</div>
+<!-- Step 3 -->
+<div class="relative group p-8 bg-white dark:bg-slate-800/40 rounded-2xl border border-slate-100 dark:border-slate-700 hover:border-primary/50 transition-all shadow-sm">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">task_alt</span>
+</div>
+<h4 class="text-xl font-bold text-navy dark:text-white mb-3">3. Act</h4>
+<p class="text-slate-custom dark:text-slate-300 text-sm leading-relaxed">
+                            Get summarized UX issue cards with context and examples that your team can execute on immediately.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-20">
+<div class="max-w-5xl mx-auto px-4">
+<div class="bg-navy dark:bg-primary rounded-[2rem] p-10 md:p-16 text-center text-white relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-3xl md:text-5xl font-black mb-6">Ready to clear the clutter?</h2>
+<p class="text-white/80 text-lg mb-10 max-w-2xl mx-auto">
+                            Join 200+ product teams who have automated their feedback analysis and saved over 10 hours a week on manual tagging.
+                        </p>
+<button class="bg-white text-navy px-10 py-4 rounded-xl font-black text-lg hover:bg-slate-100 transition-all shadow-xl">
+                            Get Early Access Now
+                        </button>
+</div>
+<!-- Decorative patterns -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-primary/30 blur-[100px] rounded-full"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-96 h-96 bg-primary/20 blur-[100px] rounded-full"></div>
+</div>
+</div>
+</section>
+</main>
+<footer class="py-12 border-t border-slate-100 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1 rounded-lg text-white">
+<span class="material-symbols-outlined text-sm">auto_awesome_motion</span>
+</div>
+<span class="text-lg font-bold text-navy dark:text-white">UX Feedback Compiler</span>
+</div>
+<div class="flex gap-8 text-sm font-medium text-slate-custom">
+<a class="hover:text-primary" href="#">Twitter</a>
+<a class="hover:text-primary" href="#">LinkedIn</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Support</a>
+</div>
+<p class="text-sm text-slate-400">© 2024 UX Feedback Compiler. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
