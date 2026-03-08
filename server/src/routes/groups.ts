@@ -1,9 +1,5 @@
 import { Router, Request, Response } from "express";
-import { createRequire } from "module";
-
-const require = createRequire(import.meta.url);
-const groups = require("../data/groups.json") as Array<Record<string, unknown>>;
-const entries = require("../data/entries.json") as Array<Record<string, unknown>>;
+import { entries, groups } from "../data/store.js";
 
 const router = Router();
 

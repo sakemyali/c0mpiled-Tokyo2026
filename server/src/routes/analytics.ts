@@ -1,18 +1,14 @@
 import { Router, Request, Response } from "express";
-import { createRequire } from "module";
-
-const require = createRequire(import.meta.url);
-const groups = require("../data/groups.json") as Array<Record<string, unknown>>;
-const entries = require("../data/entries.json") as Array<Record<string, unknown>>;
+import { entries, groups } from "../data/store.js";
 
 const router = Router();
 
-// GET /analytics - Returns aggregate analytics derived from seed data
+// GET /analytics - Returns aggregate analytics derived from current data
 router.get("/analytics", (_req: Request, res: Response) => {
   // Severity distribution
   const severityCounts: Record<string, number> = {};
   for (const group of groups) {
-    const sev = group.severity as string;
+    const sev = group.severity;
     severityCounts[sev] = (severityCounts[sev] || 0) + 1;
   }
   const severityDistribution = Object.entries(severityCounts).map(
@@ -22,8 +18,7 @@ router.get("/analytics", (_req: Request, res: Response) => {
   // Category breakdown
   const categoryCounts: Record<string, number> = {};
   for (const group of groups) {
-    const cats = group.categories as string[];
-    for (const cat of cats) {
+    for (const cat of group.categories) {
       categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
     }
   }
@@ -41,7 +36,7 @@ router.get("/analytics", (_req: Request, res: Response) => {
     volumeMap[key] = 0;
   }
   for (const entry of entries) {
-    const dateKey = (entry.submittedAt as string).split("T")[0];
+    const dateKey = entry.submittedAt.split("T")[0];
     if (dateKey in volumeMap) {
       volumeMap[dateKey]++;
     }
@@ -54,8 +49,7 @@ router.get("/analytics", (_req: Request, res: Response) => {
   // Top impacted areas: categories ranked by how many groups reference them
   const areaCounts: Record<string, number> = {};
   for (const group of groups) {
-    const cats = group.categories as string[];
-    for (const cat of cats) {
+    for (const cat of group.categories) {
       areaCounts[cat] = (areaCounts[cat] || 0) + 1;
     }
   }
