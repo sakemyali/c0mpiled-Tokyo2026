@@ -33,8 +33,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 - [x] 01-01-PLAN.md -- Express API server with seed data and REST endpoints
 - [x] 01-02-PLAN.md -- Vite React frontend scaffold with shadcn/ui, dark theme, types, API client
-- [ ] 01-03-PLAN.md -- Dashboard UI (header nav, stats row, PM insights, glass-card grid)
-- [ ] 01-04-PLAN.md -- Detail panel + Analytics page (slide-in panel, charts, screenshot lightbox)
+- [x] 01-03-PLAN.md -- Dashboard UI (header nav, stats row, PM insights, glass-card grid)
+- [x] 01-04-PLAN.md -- Detail panel + Analytics page (slide-in panel, charts, screenshot lightbox)
 
 ### Phase 2: AI Pipeline + Live Input
 **Goal**: Users can submit new feedback and watch AI cluster it into groups with generated summaries, reproduction steps, and severity scores
@@ -45,11 +45,11 @@ Plans:
   2. Triggering AI processing clusters all feedback into groups based on underlying problem similarity
   3. Each group receives an AI-generated summary with problem statement, impact description, improvement suggestion, reproduction steps, and severity score
   4. Loading states and animations are visible while AI processing runs
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md -- Backend: in-memory store, entry submission, and two-step AI pipeline
+- [ ] 02-02-PLAN.md -- Frontend: feedback form, AI processing trigger with loading states
 
 ### Phase 3: Enhancements + Demo Polish
 **Goal**: Session replay and graph visualization add wow-factor differentiation, and the demo is rehearsed and bulletproof
@@ -73,6 +73,6 @@ Phases execute in numeric order: 1 -> 2 -> 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation + Core UI | 2/4 | In progress | - |
-| 2. AI Pipeline + Live Input | 0/2 | Not started | - |
+| 1. Foundation + Core UI | 4/4 | Complete | 2026-03-08 |
+| 2. AI Pipeline + Live Input | 0/2 | Planning | - |
 | 3. Enhancements + Demo Polish | 0/2 | Not started | - |
