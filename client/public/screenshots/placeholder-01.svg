@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" rx="8" fill="#1e3a5f"/>
+  <text x="200" y="150" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#94b8db">Screenshot 1</text>
+  <text x="200" y="180" text-anchor="middle" dominant-baseline="central" font-family="system-ui, sans-serif" font-size="12" fill="#6b8baa">Navigation Issue</text>
+</svg>
