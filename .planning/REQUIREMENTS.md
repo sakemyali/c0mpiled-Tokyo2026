@@ -10,17 +10,17 @@ Requirements for hackathon demo. Each maps to roadmap phases.
 ### Data Ingestion
 
 - [x] **DATA-01**: System loads 200-300 pre-crafted realistic feedback entries on startup (vague, duplicate, varied)
-- [ ] **DATA-02**: User can submit new feedback via a live input form (simulating SDK ingestion)
+- [x] **DATA-02**: User can submit new feedback via a live input form (simulating SDK ingestion)
 - [x] **DATA-03**: Feedback entries include screenshot references displayed alongside text
 - [x] **DATA-04**: System stores pre-recorded rrweb session data with seed entries
 
 ### AI Processing
 
-- [ ] **AI-01**: AI groups similar feedback entries into issue clusters based on underlying problem
-- [ ] **AI-02**: AI generates summary per group (problem statement, impact description, improvement suggestion)
-- [ ] **AI-03**: AI generates step-by-step reproduction steps per group
-- [ ] **AI-04**: AI assigns severity score per group (critical/high/medium/low) based on frequency and impact
-- [ ] **AI-05**: AI processing uses two-step pipeline (cluster all, then summarize per group in parallel)
+- [x] **AI-01**: AI groups similar feedback entries into issue clusters based on underlying problem
+- [x] **AI-02**: AI generates summary per group (problem statement, impact description, improvement suggestion)
+- [x] **AI-03**: AI generates step-by-step reproduction steps per group
+- [x] **AI-04**: AI assigns severity score per group (critical/high/medium/low) based on frequency and impact
+- [x] **AI-05**: AI processing uses two-step pipeline (cluster all, then summarize per group in parallel)
 
 ### Dashboard
 
@@ -78,14 +78,14 @@ Deferred to post-hackathon.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | DATA-01 | Phase 1 | Complete (01-01) |
-| DATA-02 | Phase 2 | Pending |
+| DATA-02 | Phase 2 | Complete |
 | DATA-03 | Phase 1 | Complete (01-01) |
 | DATA-04 | Phase 1 | Complete (01-01) |
-| AI-01 | Phase 2 | Pending |
-| AI-02 | Phase 2 | Pending |
-| AI-03 | Phase 2 | Pending |
-| AI-04 | Phase 2 | Pending |
-| AI-05 | Phase 2 | Pending |
+| AI-01 | Phase 2 | Complete |
+| AI-02 | Phase 2 | Complete |
+| AI-03 | Phase 2 | Complete |
+| AI-04 | Phase 2 | Complete |
+| AI-05 | Phase 2 | Complete |
 | DASH-01 | Phase 1 | Complete |
 | DASH-02 | Phase 1 | Complete |
 | DASH-03 | Phase 3 | Pending |

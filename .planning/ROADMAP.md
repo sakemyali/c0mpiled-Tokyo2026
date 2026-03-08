@@ -48,7 +48,7 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md -- Backend: in-memory store, entry submission, and two-step AI pipeline
+- [x] 02-01-PLAN.md -- Backend: in-memory store, entry submission, and two-step AI pipeline
 - [ ] 02-02-PLAN.md -- Frontend: feedback form, AI processing trigger with loading states
 
 ### Phase 3: Enhancements + Demo Polish
@@ -74,5 +74,5 @@ Phases execute in numeric order: 1 -> 2 -> 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation + Core UI | 4/4 | Complete | 2026-03-08 |
-| 2. AI Pipeline + Live Input | 0/2 | Planning | - |
+| 2. AI Pipeline + Live Input | 1/2 | In Progress|  |
 | 3. Enhancements + Demo Polish | 0/2 | Not started | - |
