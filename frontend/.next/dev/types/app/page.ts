@@ -1,4 +1,4 @@
-// File: /Users/fujisetaisuke/tmp/hack_yc/test/frontend/app/page.tsx
+// File: /Users/mvrm/Desktop/Hackathons/c0mpiled-Tokyo2026/frontend/app/page.tsx
 import * as entry from '../../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/ai/route": "/api/ai",
+  "/api/ai/status/route": "/api/ai/status",
+  "/api/analytics/route": "/api/analytics",
+  "/api/entries/route": "/api/entries",
+  "/api/groups/[id]/route": "/api/groups/[id]",
+  "/api/groups/route": "/api/groups",
+  "/page": "/",
+  "/reports/[reportId]/page": "/reports/[reportId]"
+}
